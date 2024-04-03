@@ -1,0 +1,113 @@
+Command (Tests\Feature\Playground\Leads\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Model (Tests\Feature\Playground\Leads\Models\Campaign\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Goal\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Lead\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Opportunity\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Plan\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Region\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Report\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Source\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Task\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Team\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Leads\Models\Teammate\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Unit\Playground\Leads\Models\Campaign\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Goal\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Lead\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Opportunity\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Plan\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Region\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Report\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Source\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Task\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Team\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Leads\Models\Teammate\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
