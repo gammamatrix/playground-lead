@@ -1,112 +1,112 @@
-Command (Tests\Feature\Playground\Leads\Console\Commands\About\Command)
+Command (Tests\Feature\Playground\Lead\Console\Commands\About\Command)
  [x] Command about displays package information and succeed with code 0
 
-Model (Tests\Feature\Playground\Leads\Models\Campaign\Model)
+Model (Tests\Feature\Playground\Lead\Models\Campaign\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Goal\Model)
+Model (Tests\Feature\Playground\Lead\Models\Goal\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Lead\Model)
+Model (Tests\Feature\Playground\Lead\Models\Lead\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Opportunity\Model)
+Model (Tests\Feature\Playground\Lead\Models\Opportunity\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Plan\Model)
+Model (Tests\Feature\Playground\Lead\Models\Plan\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Region\Model)
+Model (Tests\Feature\Playground\Lead\Models\Region\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Report\Model)
+Model (Tests\Feature\Playground\Lead\Models\Report\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Source\Model)
+Model (Tests\Feature\Playground\Lead\Models\Source\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Task\Model)
+Model (Tests\Feature\Playground\Lead\Models\Task\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Team\Model)
+Model (Tests\Feature\Playground\Lead\Models\Team\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Leads\Models\Teammate\Model)
+Model (Tests\Feature\Playground\Lead\Models\Teammate\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Unit\Playground\Leads\Models\Campaign\Model)
+Model (Tests\Unit\Playground\Lead\Models\Campaign\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Goal\Model)
+Model (Tests\Unit\Playground\Lead\Models\Goal\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Lead\Model)
+Model (Tests\Unit\Playground\Lead\Models\Lead\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Opportunity\Model)
+Model (Tests\Unit\Playground\Lead\Models\Opportunity\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Plan\Model)
+Model (Tests\Unit\Playground\Lead\Models\Plan\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Region\Model)
+Model (Tests\Unit\Playground\Lead\Models\Region\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Report\Model)
+Model (Tests\Unit\Playground\Lead\Models\Report\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Source\Model)
+Model (Tests\Unit\Playground\Lead\Models\Source\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Task\Model)
+Model (Tests\Unit\Playground\Lead\Models\Task\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Team\Model)
+Model (Tests\Unit\Playground\Lead\Models\Team\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Leads\Models\Teammate\Model)
+Model (Tests\Unit\Playground\Lead\Models\Teammate\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make

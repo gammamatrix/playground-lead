@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-04-03 19:23:22</timestamp>
+  <timestamp>2024-04-03 19:44:12</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>28</methodCount>
@@ -12,8 +12,8 @@
   </stats>
   <methods>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
       <fullMethod>casts(): array</fullMethod>
@@ -23,8 +23,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>campaign</methodName>
       <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -34,8 +34,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>campaigns</methodName>
       <methodSignature>campaigns(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>campaigns(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -45,8 +45,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>goal</methodName>
       <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -56,8 +56,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>goals</methodName>
       <methodSignature>goals(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>goals(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -67,8 +67,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>lead</methodName>
       <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -78,8 +78,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>leads</methodName>
       <methodSignature>leads(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>leads(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -89,8 +89,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>opportunity</methodName>
       <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -100,8 +100,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>opportunities</methodName>
       <methodSignature>opportunities(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>opportunities(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -111,8 +111,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>plan</methodName>
       <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -122,8 +122,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>plans</methodName>
       <methodSignature>plans(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>plans(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -133,8 +133,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>region</methodName>
       <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -144,8 +144,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>regions</methodName>
       <methodSignature>regions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>regions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -155,8 +155,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>report</methodName>
       <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -166,8 +166,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>reports</methodName>
       <methodSignature>reports(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>reports(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -177,8 +177,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>source</methodName>
       <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -188,8 +188,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>sources</methodName>
       <methodSignature>sources(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>sources(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -199,8 +199,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>task</methodName>
       <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -210,8 +210,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>tasks</methodName>
       <methodSignature>tasks(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>tasks(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -221,8 +221,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>teammate</methodName>
       <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -232,8 +232,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>teammates</methodName>
       <methodSignature>teammates(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>teammates(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -243,8 +243,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>team</methodName>
       <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -254,8 +254,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads\Models</package>
-      <className>Playground\Leads\Models\Model</className>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Model</className>
       <methodName>teams</methodName>
       <methodSignature>teams(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>teams(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
@@ -265,8 +265,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads</package>
-      <className>Playground\Leads\ServiceProvider</className>
+      <package>Playground\Lead</package>
+      <className>Playground\Lead\ServiceProvider</className>
       <methodName>boot</methodName>
       <methodSignature>boot()</methodSignature>
       <fullMethod>boot()</fullMethod>
@@ -276,8 +276,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads</package>
-      <className>Playground\Leads\ServiceProvider</className>
+      <package>Playground\Lead</package>
+      <className>Playground\Lead\ServiceProvider</className>
       <methodName>register</methodName>
       <methodSignature>register(): void</methodSignature>
       <fullMethod>register(): void</fullMethod>
@@ -287,8 +287,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads</package>
-      <className>Playground\Leads\ServiceProvider</className>
+      <package>Playground\Lead</package>
+      <className>Playground\Lead\ServiceProvider</className>
       <methodName>publishMigrations</methodName>
       <methodSignature>publishMigrations(): void</methodSignature>
       <fullMethod>publishMigrations(): void</fullMethod>
@@ -298,8 +298,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads</package>
-      <className>Playground\Leads\ServiceProvider</className>
+      <package>Playground\Lead</package>
+      <className>Playground\Lead\ServiceProvider</className>
       <methodName>about</methodName>
       <methodSignature>about(): void</methodSignature>
       <fullMethod>about(): void</fullMethod>
@@ -309,8 +309,8 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Leads</package>
-      <className>Playground\Leads\ServiceProvider</className>
+      <package>Playground\Lead</package>
+      <className>Playground\Lead\ServiceProvider</className>
       <methodName>version</methodName>
       <methodSignature>version(): string</methodSignature>
       <fullMethod>version(): string</fullMethod>
