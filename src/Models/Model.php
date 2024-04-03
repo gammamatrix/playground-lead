@@ -26,6 +26,7 @@ use Playground\Models\Model as BaseModel;
  * @property ?Carbon $planned_start_at
  * @property ?Carbon $end_at
  * @property ?Carbon $planned_end_at
+ * @property ?Carbon $calculated_at
  * @property ?Carbon $canceled_at
  * @property ?Carbon $closed_at
  * @property ?Carbon $embargo_at
@@ -33,6 +34,7 @@ use Playground\Models\Model as BaseModel;
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
+ * @property ?Carbon $reported_at
  * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
  * @property ?Carbon $suspended_at
@@ -58,6 +60,7 @@ use Playground\Models\Model as BaseModel;
  * @property bool $canceled
  * @property bool $closed
  * @property bool $completed
+ * @property bool $duplicate
  * @property bool $featured
  * @property bool $fixed
  * @property bool $flagged
@@ -73,7 +76,7 @@ use Playground\Models\Model as BaseModel;
  * @property bool $resolved
  * @property bool $special
  * @property bool $suspended
- * @property string $route
+ * @property bool $unknown
  * @property string $label
  * @property string $title
  * @property string $byline
@@ -84,6 +87,23 @@ use Playground\Models\Model as BaseModel;
  * @property string $introduction
  * @property string $content
  * @property string $summary
+ * @property string $locale
+ * @property string $currency
+ * @property ?float $amount
+ * @property ?float $bonus
+ * @property ?float $bonus_rate
+ * @property ?float $commission
+ * @property ?float $commission_rate
+ * @property ?float $estimate
+ * @property ?float $fees
+ * @property ?float $materials
+ * @property ?float $services
+ * @property ?float $shipping
+ * @property ?float $subtotal
+ * @property ?float $taxable
+ * @property ?float $tax_rate
+ * @property ?float $taxes
+ * @property ?float $total
  * @property string $icon
  * @property string $image
  * @property string $avatar
@@ -114,6 +134,7 @@ class Model extends BaseModel
         'planned_start_at' => null,
         'end_at' => null,
         'planned_end_at' => null,
+        'calculated_at' => null,
         'canceled_at' => null,
         'closed_at' => null,
         'embargo_at' => null,
@@ -121,6 +142,7 @@ class Model extends BaseModel
         'postponed_at' => null,
         'published_at' => null,
         'released_at' => null,
+        'reported_at' => null,
         'resumed_at' => null,
         'resolved_at' => null,
         'suspended_at' => null,
@@ -146,6 +168,7 @@ class Model extends BaseModel
         'canceled' => false,
         'closed' => false,
         'completed' => false,
+        'duplicate' => false,
         'featured' => false,
         'fixed' => false,
         'flagged' => false,
@@ -171,6 +194,23 @@ class Model extends BaseModel
         'introduction' => '',
         'content' => null,
         'summary' => null,
+        'locale' => '',
+        'currency' => '',
+        'amount' => null,
+        'bonus' => null,
+        'bonus_rate' => null,
+        'commission' => null,
+        'commission_rate' => null,
+        'estimate' => null,
+        'fees' => null,
+        'materials' => null,
+        'services' => null,
+        'shipping' => null,
+        'subtotal' => null,
+        'taxable' => null,
+        'tax_rate' => null,
+        'taxes' => null,
+        'total' => null,
         'icon' => '',
         'image' => '',
         'avatar' => '',
@@ -190,11 +230,12 @@ class Model extends BaseModel
     protected $fillable = [
         'owned_by_id',
         'parent_id',
-        'people_type',
+        'model_type',
         'start_at',
         'planned_start_at',
         'end_at',
         'planned_end_at',
+        'calculated_at',
         'canceled_at',
         'closed_at',
         'embargo_at',
@@ -202,6 +243,7 @@ class Model extends BaseModel
         'postponed_at',
         'published_at',
         'released_at',
+        'reported_at',
         'resumed_at',
         'resolved_at',
         'suspended_at',
@@ -253,6 +295,21 @@ class Model extends BaseModel
         'introduction',
         'content',
         'summary',
+        'locale',
+        'currency',
+        'amount',
+        'bonus',
+        'bonus_rate',
+        'estimate',
+        'fees',
+        'materials',
+        'services',
+        'shipping',
+        'subtotal',
+        'taxable',
+        'tax_rate',
+        'taxes',
+        'total',
         'icon',
         'image',
         'avatar',
@@ -278,6 +335,7 @@ class Model extends BaseModel
             'planned_start_at' => 'datetime',
             'end_at' => 'datetime',
             'planned_end_at' => 'datetime',
+            'calculated_at' => 'datetime',
             'canceled_at' => 'datetime',
             'closed_at' => 'datetime',
             'embargo_at' => 'datetime',
@@ -285,6 +343,7 @@ class Model extends BaseModel
             'postponed_at' => 'datetime',
             'published_at' => 'datetime',
             'released_at' => 'datetime',
+            'reported_at' => 'datetime',
             'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
             'suspended_at' => 'datetime',
@@ -336,6 +395,23 @@ class Model extends BaseModel
             'introduction' => 'string',
             'content' => 'string',
             'summary' => 'string',
+            'locale' => 'string',
+            'currency' => 'string',
+            'amount' => 'float',
+            'bonus' => 'float',
+            'bonus_rate' => 'float',
+            'commission' => 'float',
+            'commission_rate' => 'float',
+            'estimate' => 'float',
+            'fees' => 'float',
+            'materials' => 'float',
+            'services' => 'float',
+            'shipping' => 'float',
+            'subtotal' => 'float',
+            'taxable' => 'float',
+            'tax_rate' => 'float',
+            'taxes' => 'float',
+            'total' => 'float',
             'icon' => 'string',
             'image' => 'string',
             'avatar' => 'string',

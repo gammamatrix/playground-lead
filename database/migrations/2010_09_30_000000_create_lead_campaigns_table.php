@@ -52,6 +52,7 @@ return new class extends Migration
             $table->dateTime('planned_start_at')->nullable();
             $table->dateTime('end_at')->nullable()->index();
             $table->dateTime('planned_end_at')->nullable();
+            $table->dateTime('calculated_at')->nullable();
             $table->dateTime('canceled_at')->nullable();
             $table->dateTime('closed_at')->nullable()->index();
             $table->dateTime('embargo_at')->nullable();
@@ -59,6 +60,7 @@ return new class extends Migration
             $table->dateTime('postponed_at')->nullable();
             $table->dateTime('published_at')->nullable();
             $table->dateTime('released_at')->nullable();
+            $table->dateTime('reported_at')->nullable();
             $table->dateTime('resumed_at')->nullable();
             $table->dateTime('resolved_at')->nullable();
             $table->dateTime('suspended_at')->nullable();
@@ -126,6 +128,25 @@ return new class extends Migration
             $table->mediumText('content')->nullable();
             $table->mediumText('summary')->nullable();
             $table->string('locale')->default('');
+
+            // Finances
+
+            $table->string('currency')->default('');
+            $table->decimal('amount', 19, 4)->nullable()->default(null);
+            $table->decimal('bonus', 19, 4)->nullable()->default(null);
+            $table->decimal('bonus_rate', 8, 4)->nullable()->default(null);
+            $table->decimal('commission', 19, 4)->nullable()->default(null);
+            $table->decimal('commission_rate', 8, 4)->nullable()->default(null);
+            $table->decimal('estimate', 19, 4)->nullable()->default(null);
+            $table->decimal('fees', 19, 4)->nullable()->default(null);
+            $table->decimal('materials', 19, 4)->nullable()->default(null);
+            $table->decimal('services', 19, 4)->nullable()->default(null);
+            $table->decimal('shipping', 19, 4)->nullable()->default(null);
+            $table->decimal('subtotal', 19, 4)->nullable()->default(null);
+            $table->decimal('taxable', 19, 4)->nullable()->default(null);
+            $table->decimal('tax_rate', 8, 4)->nullable()->default(null);
+            $table->decimal('taxes', 19, 4)->nullable()->default(null);
+            $table->decimal('total', 19, 4)->nullable()->default(null);
 
             // UI
 
