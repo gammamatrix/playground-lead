@@ -4,16 +4,16 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Leads\Models\Team;
+namespace Tests\Feature\Playground\Lead\Models\Team;
 
-use Tests\Feature\Playground\Leads\Models\ModelCase;
+use Tests\Feature\Playground\Lead\Models\ModelCase;
 
 /**
- * \Tests\Feature\Playground\Leads\Models\Team\ModelTest
+ * \Tests\Feature\Playground\Lead\Models\Team\ModelTest
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Leads\Models\Team::class;
+    protected string $modelClass = \Playground\Lead\Models\Team::class;
 
     protected bool $hasRelationships = true;
 
@@ -36,7 +36,7 @@ class ModelTest extends ModelCase
         'parent' => [
             'key' => 'parent_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Team::class,
+            'modelClass' => \Playground\Lead\Models\Team::class,
         ],
     ];
 }

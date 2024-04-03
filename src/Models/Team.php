@@ -4,12 +4,12 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Playground\Leads\Models;
+namespace Playground\Lead\Models;
 
 /**
- * \Playground\Leads\Models\Team
+ * \Playground\Lead\Models\Team
  */
 class Team extends Model
 {
-    protected $table = 'leads_teams';
+    protected $table = 'lead_teams';
 }

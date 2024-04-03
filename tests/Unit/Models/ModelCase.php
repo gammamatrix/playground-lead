@@ -4,14 +4,14 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Tests\Unit\Playground\Leads\Models;
+namespace Tests\Unit\Playground\Lead\Models;
 
-use Playground\Leads\ServiceProvider;
+use Playground\Lead\ServiceProvider;
 use Playground\ServiceProvider as PlaygroundServiceProvider;
 use Playground\Test\Unit\Models\ModelCase as BaseModelCase;
 
 /**
- * \Tests\Unit\Playground\Leads\Models\ModelCase
+ * \Tests\Unit\Playground\Lead\Models\ModelCase
  */
 class ModelCase extends BaseModelCase
 {
@@ -69,6 +69,6 @@ class ModelCase extends BaseModelCase
         $app['config']->set('auth.testing.password', 'password');
         $app['config']->set('auth.testing.hashed', false);
 
-        $app['config']->set('playground-leads.load.migrations', true);
+        $app['config']->set('playground-lead.load.migrations', true);
     }
 }

@@ -4,14 +4,14 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Playground\Leads\Models;
+namespace Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Playground\Models\Model as BaseModel;
 
 /**
- * \Playground\Leads\Models\Model
+ * \Playground\Lead\Models\Model
  *
  * @property string $id
  * @property ?scalar $created_by_id

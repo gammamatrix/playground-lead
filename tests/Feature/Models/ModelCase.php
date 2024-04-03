@@ -4,19 +4,19 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Leads\Models;
+namespace Tests\Feature\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Carbon;
-use Playground\Leads\ServiceProvider;
+use Playground\Lead\ServiceProvider;
 use Playground\ServiceProvider as PlaygroundServiceProvider;
 use Playground\Test\Feature\Models\ModelCase as BaseModelCase;
 
 /**
- * \Tests\Feature\Playground\Leads\Models\ModelCase
+ * \Tests\Feature\Playground\Lead\Models\ModelCase
  */
 class ModelCase extends BaseModelCase
 {
@@ -34,57 +34,57 @@ class ModelCase extends BaseModelCase
         'campaigns' => [
             'key' => 'campaign_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Campaign::class,
+            'modelClass' => \Playground\Lead\Models\Campaign::class,
         ],
         'goals' => [
             'key' => 'goal_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Goal::class,
+            'modelClass' => \Playground\Lead\Models\Goal::class,
         ],
         'leads' => [
             'key' => 'lead_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Lead::class,
+            'modelClass' => \Playground\Lead\Models\Lead::class,
         ],
         'opportunities' => [
             'key' => 'opportunity_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Opportunity::class,
+            'modelClass' => \Playground\Lead\Models\Opportunity::class,
         ],
         'plans' => [
             'key' => 'plan_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Plan::class,
+            'modelClass' => \Playground\Lead\Models\Plan::class,
         ],
         'regions' => [
             'key' => 'region_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Region::class,
+            'modelClass' => \Playground\Lead\Models\Region::class,
         ],
         'reports' => [
             'key' => 'report_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Report::class,
+            'modelClass' => \Playground\Lead\Models\Report::class,
         ],
         'sources' => [
             'key' => 'source_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Source::class,
+            'modelClass' => \Playground\Lead\Models\Source::class,
         ],
         'tasks' => [
             'key' => 'task_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Task::class,
+            'modelClass' => \Playground\Lead\Models\Task::class,
         ],
         'teammates' => [
             'key' => 'teammate_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Teammate::class,
+            'modelClass' => \Playground\Lead\Models\Teammate::class,
         ],
         'teams' => [
             'key' => 'team_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Team::class,
+            'modelClass' => \Playground\Lead\Models\Team::class,
         ],
     ];
 
@@ -107,62 +107,62 @@ class ModelCase extends BaseModelCase
         // 'parent' => [
         //     'key' => 'parent_id',
         //     'rule' => 'create',
-        //     'modelClass' => \Playground\Leads\Models\Model::class,
+        //     'modelClass' => \Playground\Lead\Models\Model::class,
         // ],
         'campaign' => [
             'key' => 'campaign_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Campaign::class,
+            'modelClass' => \Playground\Lead\Models\Campaign::class,
         ],
         'goal' => [
             'key' => 'goal_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Goal::class,
+            'modelClass' => \Playground\Lead\Models\Goal::class,
         ],
         'lead' => [
             'key' => 'lead_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Lead::class,
+            'modelClass' => \Playground\Lead\Models\Lead::class,
         ],
         'opportunity' => [
             'key' => 'opportunity_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Opportunity::class,
+            'modelClass' => \Playground\Lead\Models\Opportunity::class,
         ],
         'plan' => [
             'key' => 'plan_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Plan::class,
+            'modelClass' => \Playground\Lead\Models\Plan::class,
         ],
         'region' => [
             'key' => 'region_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Region::class,
+            'modelClass' => \Playground\Lead\Models\Region::class,
         ],
         'report' => [
             'key' => 'report_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Report::class,
+            'modelClass' => \Playground\Lead\Models\Report::class,
         ],
         'source' => [
             'key' => 'source_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Source::class,
+            'modelClass' => \Playground\Lead\Models\Source::class,
         ],
         'task' => [
             'key' => 'task_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Task::class,
+            'modelClass' => \Playground\Lead\Models\Task::class,
         ],
         'team' => [
             'key' => 'team_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Team::class,
+            'modelClass' => \Playground\Lead\Models\Team::class,
         ],
         'teammate' => [
             'key' => 'teammate_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Leads\Models\Teammate::class,
+            'modelClass' => \Playground\Lead\Models\Teammate::class,
         ],
     ];
 
@@ -206,7 +206,7 @@ class ModelCase extends BaseModelCase
         $app['config']->set('auth.providers.users.model', 'Playground\\Models\\User');
         $app['config']->set('playground-auth.verify', 'user');
 
-        $app['config']->set('playground-leads.load.migrations', true);
+        $app['config']->set('playground-lead.load.migrations', true);
     }
 
     protected function test_parent_relationship(): void

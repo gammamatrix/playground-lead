@@ -4,15 +4,15 @@
  */
 
 declare(strict_types=1);
-namespace Tests\Feature\Playground\Leads\Console\Commands\About;
+namespace Tests\Feature\Playground\Lead\Console\Commands\About;
 
 use PHPUnit\Framework\Attributes\CoversClass;
-use Playground\Leads\ServiceProvider;
+use Playground\Lead\ServiceProvider;
 use Playground\ServiceProvider as PlaygroundServiceProvider;
 use Playground\Test\OrchestraTestCase;
 
 /**
- * \Tests\Feature\Playground\Leads\Console\Commands\About
+ * \Tests\Feature\Playground\Lead\Console\Commands\About
  */
 #[CoversClass(ServiceProvider::class)]
 class CommandTest extends OrchestraTestCase
@@ -32,6 +32,6 @@ class CommandTest extends OrchestraTestCase
          */
         $result = $this->artisan('about');
         $result->assertExitCode(0);
-        $result->expectsOutputToContain('Playground: Leads');
+        $result->expectsOutputToContain('Playground: Lead');
     }
 }

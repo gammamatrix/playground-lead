@@ -1,50 +1,50 @@
-# Playground Leads
+# Playground Lead
 
-[![Playground CI Workflow](https://github.com/gammamatrix/playground-leads/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/playground-leads/testing/develop/testdox.txt)
-[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-leads/testing/develop/coverage.svg)](tests)
+[![Playground CI Workflow](https://github.com/gammamatrix/playground-lead/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/playground-lead/testing/develop/testdox.txt)
+[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-lead/testing/develop/coverage.svg)](tests)
 [![PHPStan Level 9](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 
-The Playground Leads is a package for [Laravel](https://laravel.com/docs/11.x) applications.
+The Playground Lead is a package for [Laravel](https://laravel.com/docs/11.x) applications.
 
-This application provides the models to use the Playground Leads, a Campaign Sales Management tool.
+This application provides the models to use the Playground Lead, a Campaign Sales Management tool.
 
-Read more on using [Playground Leads at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/leads.html)
+Read more on using [Playground Lead at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/leads.html)
 
 ## Installation
 
 **NOTE:** This package is required by:
-- [Playground Leads API](https://github.com/gammamatrix/playground-leads-api): API without UI
-- [Playground Leads Resource](https://github.com/gammamatrix/playground-leads-resource): API with UI
+- [Playground Lead API](https://github.com/gammamatrix/playground-lead-api): API without UI
+- [Playground Lead Resource](https://github.com/gammamatrix/playground-lead-resource): API with UI
 
-Install this package, with composer, to get access to the Leads Models:
+Install this package, with composer, to get access to the Lead Models:
 
 ```bash
-composer require gammamatrix/playground-leads
+composer require gammamatrix/playground-lead
 ```
 
 ## `artisan:about`
 
-Playground Leads provides information in the `artisan about` command.
+Playground Lead provides information in the `artisan about` command.
 
-<!-- <img src="resources/docs/artisan-about-playground-leads.png" alt="screenshot of artisan about command with Playground Leads."> -->
+<!-- <img src="resources/docs/artisan-about-playground-lead.png" alt="screenshot of artisan about command with Playground Lead."> -->
 
 ## Configuration
 
 Migrations are disabled by default. This package may sometimes be installed where another system handles the migrations.
 
-See the contents of the published config file: [config/playground-leads.php](config/playground-leads.php)
+See the contents of the published config file: [config/playground-lead.php](config/playground-lead.php)
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Playground\Leads\ServiceProvider" --tag="playground-config"
+php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="playground-config"
 ```
 
 ### Environment Variables
 
 |  env()                           | config()                         | Default |
 |----------------------------------|----------------------------------|---------|
-| `PLAYGROUND_LEADS_ABOUT`           | `playground-leads.about`           | `true`  |
-| `PLAYGROUND_LEADS_LOAD_MIGRATIONS` | `playground-leads.load.migrations` | `false` |
+| `PLAYGROUND_LEAD_ABOUT`           | `playground-lead.about`           | `true`  |
+| `PLAYGROUND_LEAD_LOAD_MIGRATIONS` | `playground-lead.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
 
 ## Models
@@ -65,7 +65,7 @@ See the contents of the published config file: [database/migrations](database/mi
 
 You can publish the migrations file with:
 ```bash
-php artisan vendor:publish --provider="Playground\Leads\ServiceProvider" --tag="playground-migrations"
+php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="playground-migrations"
 ```
 
 ## PHPStan

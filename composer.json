@@ -1,13 +1,13 @@
 {
-    "name": "gammamatrix/playground-leads",
-    "description": "Playground: Provide the Leads models for the Playground Content Management System.",
+    "name": "gammamatrix/playground-lead",
+    "description": "Playground: Provide the Lead models for the Playground Content Management System.",
     "keywords": [
         "leads",
         "gammamatrix",
         "laravel",
         "playground"
     ],
-    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/components/leads.html",
+    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/components/lead.html",
     "license": "MIT",
     "authors": [
         {
@@ -24,21 +24,21 @@
         "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0"
     },
     "suggest": {
-        "gammamatrix/playground-leads-api": "Provides an API, without a UI, to interact with the models provided in this package.",
-        "gammamatrix/playground-leads-resource": "Provides a resource API and optional Blade UI to interact with the models provided in this package."
+        "gammamatrix/playground-lead-api": "Provides an API, without a UI, to interact with the models provided in this package.",
+        "gammamatrix/playground-lead-resource": "Provides a resource API and optional Blade UI to interact with the models provided in this package."
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Database\\Factories\\Playground\\Leads\\Models\\": "database/factories/",
-            "Playground\\Leads\\": "src/"
+            "Database\\Factories\\Playground\\Lead\\Models\\": "database/factories/",
+            "Playground\\Lead\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Feature\\Playground\\Leads\\": "tests/Feature/",
-            "Tests\\Unit\\Playground\\Leads\\": "tests/Unit/"
+            "Tests\\Feature\\Playground\\Lead\\": "tests/Feature/",
+            "Tests\\Unit\\Playground\\Lead\\": "tests/Unit/"
         }
     },
     "config": {
@@ -55,7 +55,7 @@
         },
         "laravel": {
             "providers": [
-                "Playground\\Leads\\ServiceProvider"
+                "Playground\\Lead\\ServiceProvider"
             ]
         }
     },

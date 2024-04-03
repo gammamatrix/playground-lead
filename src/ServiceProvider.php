@@ -4,19 +4,19 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Playground\Leads;
+namespace Playground\Lead;
 
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
 
 /**
- * \Playground\Leads\ServiceProvider
+ * \Playground\Lead\ServiceProvider
  */
 class ServiceProvider extends AuthServiceProvider
 {
     public const VERSION = '73.0.0';
 
-    public string $package = 'playground-leads';
+    public string $package = 'playground-lead';
 
     /**
      * Bootstrap any package services.
@@ -60,8 +60,8 @@ class ServiceProvider extends AuthServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            dirname(__DIR__).'/config/playground-leads.php',
-            'playground-leads'
+            dirname(__DIR__).'/config/playground-lead.php',
+            'playground-lead'
         );
     }
 
@@ -73,11 +73,17 @@ class ServiceProvider extends AuthServiceProvider
         $migrations = [];
 
         foreach ([
-            '2010_09_30_000000_create_leads_clients_table.php',
-            '2010_09_30_000000_create_leads_contacts_table.php',
-            '2010_09_30_000000_create_leads_locations_table.php',
-            '2010_09_30_000000_create_leads_organizations_table.php',
-            '2010_09_30_000000_create_leads_peoples_table.php',
+            '2010_09_30_000000_create_lead_campaigns_table.php',
+            '2010_09_30_000000_create_lead_goals_table.php',
+            '2010_09_30_000000_create_lead_leads_table.php',
+            '2010_09_30_000000_create_lead_opportunities_table.php',
+            '2010_09_30_000000_create_lead_plans_table.php',
+            '2010_09_30_000000_create_lead_regions_table.php',
+            '2010_09_30_000000_create_lead_reports_table.php',
+            '2010_09_30_000000_create_lead_sources_table.php',
+            '2010_09_30_000000_create_lead_tasks_table.php',
+            '2010_09_30_000000_create_lead_teammates_table.php',
+            '2010_09_30_000000_create_lead_teams_table.php',
         ] as $file) {
             $migrations[dirname(__DIR__).'/database/migrations/'.$file] = database_path('migrations/'.$file);
         }
@@ -94,7 +100,7 @@ class ServiceProvider extends AuthServiceProvider
 
         $version = $this->version();
 
-        AboutCommand::add('Playground: Leads', fn () => [
+        AboutCommand::add('Playground: Lead', fn () => [
             '<fg=yellow;options=bold>Load</> Migrations' => ! empty($load['migrations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             'Package' => $this->package,
             'Version' => $version,

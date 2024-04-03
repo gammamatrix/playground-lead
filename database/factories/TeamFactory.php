@@ -4,14 +4,14 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Database\Factories\Playground\Leads\Models;
+namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use Playground\Leads\Models\Team;
+use Playground\Lead\Models\Team;
 
 /**
- * \Database\Factories\Playground\Leads\Models\TeamFactory
+ * \Database\Factories\Playground\Lead\Models\TeamFactory
  *
  * @extends Factory<Team>
  */

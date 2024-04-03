@@ -4,14 +4,14 @@ declare(strict_types=1);
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Leads\Models\Region;
+namespace Tests\Feature\Playground\Lead\Models\Region;
 
-use Tests\Feature\Playground\Leads\Models\ModelCase;
+use Tests\Feature\Playground\Lead\Models\ModelCase;
 
 /**
- * \Tests\Feature\Playground\Leads\Models\Region\ModelTest
+ * \Tests\Feature\Playground\Lead\Models\Region\ModelTest
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Leads\Models\Region::class;
+    protected string $modelClass = \Playground\Lead\Models\Region::class;
 }

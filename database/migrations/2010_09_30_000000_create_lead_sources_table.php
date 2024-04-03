@@ -17,7 +17,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('leads_tasks', function (Blueprint $table) {
+        Schema::create('lead_sources', function (Blueprint $table) {
 
             // Primary key
 
@@ -150,6 +150,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('leads_tasks');
+        Schema::dropIfExists('lead_sources');
     }
 };
