@@ -19,6 +19,17 @@ use Playground\Models\Model as BaseModel;
  * @property ?scalar $owned_by_id
  * @property ?string $parent_id
  * @property string $model_type
+ * @property ?string $campaign_id
+ * @property ?string $goal_id
+ * @property ?string $lead_id
+ * @property ?string $opportunity_id
+ * @property ?string $plan_id
+ * @property ?string $region_id
+ * @property ?string $report_id
+ * @property ?string $source_id
+ * @property ?string $task_id
+ * @property ?string $team_id
+ * @property ?string $teammate_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
@@ -35,8 +46,8 @@ use Playground\Models\Model as BaseModel;
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
  * @property ?Carbon $reported_at
- * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
+ * @property ?Carbon $resumed_at
  * @property ?Carbon $suspended_at
  * @property int $gids
  * @property int $po
@@ -143,8 +154,8 @@ class Model extends BaseModel
         'published_at' => null,
         'released_at' => null,
         'reported_at' => null,
-        'resumed_at' => null,
         'resolved_at' => null,
+        'resumed_at' => null,
         'suspended_at' => null,
         'gids' => 0,
         'po' => 0,
@@ -244,8 +255,8 @@ class Model extends BaseModel
         'published_at',
         'released_at',
         'reported_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'gids',
         'po',
@@ -344,8 +355,8 @@ class Model extends BaseModel
             'published_at' => 'datetime',
             'released_at' => 'datetime',
             'reported_at' => 'datetime',
-            'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
+            'resumed_at' => 'datetime',
             'suspended_at' => 'datetime',
             'gids' => 'integer',
             'po' => 'integer',

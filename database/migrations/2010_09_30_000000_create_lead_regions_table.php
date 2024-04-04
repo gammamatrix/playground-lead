@@ -61,8 +61,8 @@ return new class extends Migration
             $table->dateTime('published_at')->nullable();
             $table->dateTime('released_at')->nullable();
             $table->dateTime('reported_at')->nullable();
-            $table->dateTime('resumed_at')->nullable();
             $table->dateTime('resolved_at')->nullable();
+            $table->dateTime('resumed_at')->nullable();
             $table->dateTime('suspended_at')->nullable();
 
             // Permissions
