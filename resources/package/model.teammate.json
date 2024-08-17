@@ -2263,7 +2263,7 @@
         }
     ],
     "create": {
-        "migration": "2024_08_17_000000_create_lead_teammates_table",
+        "migration": "2010_09_30_000000_create_lead_teammates_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,
