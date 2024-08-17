@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -44,10 +44,35 @@ class ReportFactory extends Factory
         ];
     }
 
+    // States: flags
+
+    /**
+     * @return Factory<Report>
+     */
     public function locked(): Factory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
+        ]);
+    }
+
+    /**
+     * @return Factory<Report>
+     */
+    public function featured(): Factory
+    {
+        return $this->state(fn (array $attributes) => [
+            'featured' => true,
+        ]);
+    }
+
+    /**
+     * @return Factory<Report>
+     */
+    public function special(): Factory
+    {
+        return $this->state(fn (array $attributes) => [
+            'special' => true,
         ]);
     }
 }

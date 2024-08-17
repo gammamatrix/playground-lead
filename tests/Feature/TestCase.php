@@ -4,16 +4,16 @@
  */
 
 declare(strict_types=1);
-namespace Tests\Feature\Playground\Lead\Models;
+namespace Tests\Feature\Playground\Lead;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Playground\Test\Feature\Models\ModelCase as BaseModelCase;
+use Playground\Test\OrchestraTestCase;
 use Tests\Unit\Playground\Lead\PackageProviders;
 
 /**
- * \Tests\Feature\Playground\Lead\Models\ModelCase
+ * \Tests\Feature\Playground\Lead\TestCase
  */
-class ModelCase extends BaseModelCase
+class TestCase extends OrchestraTestCase
 {
     use DatabaseTransactions;
     use PackageProviders;

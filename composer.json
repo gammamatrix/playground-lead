@@ -1,13 +1,13 @@
 {
     "name": "gammamatrix/playground-lead",
-    "description": "Playground: Provide the Lead models for the Playground Content Management System.",
+    "description": "Playground: Provide the Lead models for the Playground Lead System.",
     "keywords": [
-        "leads",
         "gammamatrix",
         "laravel",
+        "lead",
         "playground"
     ],
-    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/components/lead.html",
+    "homepage": "https://github.com/gammamatrix/playground-lead",
     "license": "MIT",
     "authors": [
         {
@@ -18,17 +18,15 @@
     ],
     "require": {
         "php": "^8.2",
-        "gammamatrix/playground": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0"
+        "gammamatrix/playground": "*"
     },
     "require-dev": {
-        "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0"
+        "gammamatrix/playground-test": "*"
     },
     "suggest": {
         "gammamatrix/playground-lead-api": "Provides an API, without a UI, to interact with the models provided in this package.",
         "gammamatrix/playground-lead-resource": "Provides a resource API and optional Blade UI to interact with the models provided in this package."
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Database\\Factories\\Playground\\Lead\\Models\\": "database/factories/",
@@ -50,8 +48,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "73.x-dev",
-            "dev-master": "73.x-dev"
+            "dev-develop": "73.x-dev"
         },
         "laravel": {
             "providers": [
@@ -59,9 +56,12 @@
             ]
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
-        "test": "vendor/bin/phpunit",
+        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
+        "cloc": "cloc --exclude-dir=node_modules,output,vendor .",
         "format": "vendor/bin/php-cs-fixer fix",
-        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
+        "test": "vendor/bin/testbench package:test"
     }
 }
