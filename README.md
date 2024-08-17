@@ -8,7 +8,7 @@ The Playground Lead is a package for [Laravel](https://laravel.com/docs/11.x) ap
 
 This application provides the models to use the Playground Lead, a Campaign Sales Management tool.
 
-Read more on using [Playground Lead at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/leads.html)
+Read more on using [Playground Lead at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/lead.html)
 
 ## Installation
 
