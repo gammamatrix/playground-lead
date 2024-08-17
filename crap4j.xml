@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-04-04 05:12:17</timestamp>
+  <timestamp>2024-08-17 00:25:56</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>28</methodCount>
+    <methodCount>125</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>38</totalCrap>
+    <totalCrap>135</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
       <fullMethod>casts(): array</fullMethod>
@@ -24,29 +24,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>campaigns</methodName>
-      <methodSignature>campaigns(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>campaigns(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>goal</methodName>
       <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -57,18 +35,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>goals</methodName>
-      <methodSignature>goals(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>goals(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>lead</methodName>
       <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -79,18 +46,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>leads</methodName>
-      <methodSignature>leads(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>leads(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>opportunity</methodName>
       <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -101,18 +57,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>opportunities</methodName>
-      <methodSignature>opportunities(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>opportunities(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>plan</methodName>
       <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -123,18 +68,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>plans</methodName>
-      <methodSignature>plans(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>plans(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>region</methodName>
       <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -145,18 +79,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>regions</methodName>
-      <methodSignature>regions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>regions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>report</methodName>
       <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -167,18 +90,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>reports</methodName>
-      <methodSignature>reports(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>reports(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>source</methodName>
       <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -189,18 +101,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>sources</methodName>
-      <methodSignature>sources(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>sources(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>task</methodName>
       <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -211,40 +112,7 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>tasks</methodName>
-      <methodSignature>tasks(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>tasks(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>teammates</methodName>
-      <methodSignature>teammates(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>teammates(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
+      <className>Playground\Lead\Models\Campaign</className>
       <methodName>team</methodName>
       <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
@@ -255,10 +123,1220 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
-      <className>Playground\Lead\Models\Model</className>
-      <methodName>teams</methodName>
-      <methodSignature>teams(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>teams(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -305,17 +1383,6 @@
       <fullMethod>about(): void</fullMethod>
       <crap>5</crap>
       <complexity>5</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Lead</package>
-      <className>Playground\Lead\ServiceProvider</className>
-      <methodName>version</methodName>
-      <methodSignature>version(): string</methodSignature>
-      <fullMethod>version(): string</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
