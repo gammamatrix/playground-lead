@@ -201,7 +201,7 @@
         "email": null,
         "phone": null,
         "team_role": null,
-        "currency": "",
+        "currency": null,
         "amount": null,
         "bonus": null,
         "bonus_rate": null,
@@ -3094,10 +3094,9 @@
                 "icon": "",
                 "html": false,
                 "index": false,
-                "nullable": false,
+                "nullable": true,
                 "readOnly": false,
-                "type": "string",
-                "default": ""
+                "type": "string"
             },
             "amount": {
                 "column": "amount",

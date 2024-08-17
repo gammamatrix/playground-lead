@@ -104,7 +104,7 @@ use Playground\Models\Model;
  * @property ?string $email
  * @property ?string $phone
  * @property ?string $team_role
- * @property string $currency
+ * @property ?string $currency
  * @property ?double $amount
  * @property ?double $bonus
  * @property ?double $bonus_rate
@@ -233,7 +233,7 @@ class Region extends Model
         'email' => null,
         'phone' => null,
         'team_role' => null,
-        'currency' => '',
+        'currency' => null,
         'amount' => null,
         'bonus' => null,
         'bonus_rate' => null,

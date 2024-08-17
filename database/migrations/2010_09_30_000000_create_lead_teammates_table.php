@@ -138,7 +138,7 @@ return new class() extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('team_role')->nullable();
-            $table->string('currency')->default('');
+            $table->string('currency')->nullable();
             $table->decimal('amount', 19, 4)->nullable();
             $table->decimal('bonus', 19, 4)->nullable();
             $table->decimal('bonus_rate', 8, 4)->nullable();
