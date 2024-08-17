@@ -6,32 +6,37 @@
 declare(strict_types=1);
 namespace Tests\Feature\Playground\Lead\Console\Commands\About;
 
+use Illuminate\Console\Command;
 use PHPUnit\Framework\Attributes\CoversClass;
 use Playground\Lead\ServiceProvider;
-use Playground\ServiceProvider as PlaygroundServiceProvider;
-use Playground\Test\OrchestraTestCase;
+use Tests\Feature\Playground\Lead\TestCase;
 
 /**
- * \Tests\Feature\Playground\Lead\Console\Commands\About
+ * \Tests\Feature\Playground\Lead\Console\Commands\About\CommandTest
  */
 #[CoversClass(ServiceProvider::class)]
-class CommandTest extends OrchestraTestCase
+class CommandTest extends TestCase
 {
-    protected function getPackageProviders($app)
+    /**
+     * Define environment setup.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return void
+     */
+    protected function defineEnvironment($app)
     {
-        return [
-            PlaygroundServiceProvider::class,
-            ServiceProvider::class,
-        ];
+        parent::defineEnvironment($app);
+
+        $app['config']->set('playground-lead.load.migrations', true);
     }
 
-    public function test_command_about_displays_package_information_and_succeed_with_code_0(): void
+    public function test_command_about_displays_package_information_and_succeed(): void
     {
         /**
          * @var \Illuminate\Testing\PendingCommand $result
          */
         $result = $this->artisan('about');
-        $result->assertExitCode(0);
+        $result->assertExitCode(Command::SUCCESS);
         $result->expectsOutputToContain('Playground: Lead');
     }
 }

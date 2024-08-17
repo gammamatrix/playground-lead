@@ -13,7 +13,7 @@
 .DS_Store
 */.DS_Store
 
-.derp
+*.derp
 
 Homestead.yaml
 Homestead.json
@@ -33,6 +33,7 @@ database/migrations/*.disabled
 resources/packages
 
 composer.lock
+package-lock.json
 
 tmp-*
 temp-*
@@ -59,7 +60,11 @@ public/storage
 
 output
 
+public/docs
+
 public/tests
+
+phpstan.neon
 
 phpunit.xml
 
@@ -95,4 +100,3 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-

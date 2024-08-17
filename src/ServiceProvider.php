@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Playground\Lead;
 
 use Illuminate\Foundation\Console\AboutCommand;
@@ -61,13 +61,10 @@ class ServiceProvider extends AuthServiceProvider
     {
         $this->mergeConfigFrom(
             dirname(__DIR__).'/config/playground-lead.php',
-            'playground-lead'
+            $this->package
         );
     }
 
-    /**
-     * Register any application services.
-     */
     public function publishMigrations(): void
     {
         $migrations = [];
@@ -98,17 +95,10 @@ class ServiceProvider extends AuthServiceProvider
 
         $load = ! empty($config['load']) && is_array($config['load']) ? $config['load'] : [];
 
-        $version = $this->version();
-
         AboutCommand::add('Playground: Lead', fn () => [
             '<fg=yellow;options=bold>Load</> Migrations' => ! empty($load['migrations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             'Package' => $this->package,
-            'Version' => $version,
+            'Version' => ServiceProvider::VERSION,
         ]);
-    }
-
-    public function version(): string
-    {
-        return static::VERSION;
     }
 }
