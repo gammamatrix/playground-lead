@@ -39,6 +39,34 @@ You can publish the config file with:
 php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="playground-config"
 ```
 
+## Cloc
+
+```sh
+composer cloc
+```
+
+```
+➜  playground-lead git:(feature/GH-1) ✗ composer cloc
+> cloc --exclude-dir=node_modules,output,vendor .
+     102 text files.
+      85 unique files.
+      18 files ignored.
+
+github.com/AlDanial/cloc v 1.98  T=0.26 s (324.4 files/s, 205414.3 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+JSON                            13              0              0          41256
+PHP                             64            727           2947           8235
+YAML                             1              5              0            275
+XML                              3              0              7            215
+Markdown                         3             43              1             93
+INI                              1              3              0             12
+-------------------------------------------------------------------------------
+SUM:                            85            778           2955          50086
+-------------------------------------------------------------------------------
+```
+
 ### Environment Variables
 
 |  env()                           | config()                         | Default |
