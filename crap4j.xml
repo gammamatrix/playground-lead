@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-08-17 03:24:01</timestamp>
+  <timestamp>2025-09-21 19:45:53</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>125</methodCount>
@@ -26,8 +26,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -37,8 +37,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -48,8 +48,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -59,8 +59,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -70,8 +70,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -81,8 +81,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -92,8 +92,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -103,8 +103,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -114,8 +114,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -125,8 +125,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Campaign</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -147,8 +147,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -158,8 +158,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -169,8 +169,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -180,8 +180,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -191,8 +191,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -202,8 +202,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -213,8 +213,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -224,8 +224,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -235,8 +235,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -246,8 +246,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -268,8 +268,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -279,8 +279,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -290,8 +290,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -301,8 +301,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -312,8 +312,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -323,8 +323,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -334,8 +334,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -345,8 +345,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -356,8 +356,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -367,8 +367,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Lead</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -389,8 +389,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -400,8 +400,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -411,8 +411,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -422,8 +422,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -433,8 +433,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -444,8 +444,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -455,8 +455,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -466,8 +466,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -477,8 +477,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -488,8 +488,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -510,8 +510,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -521,8 +521,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -532,8 +532,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -543,8 +543,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -554,8 +554,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -565,8 +565,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -576,8 +576,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -587,8 +587,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -598,8 +598,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -609,8 +609,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Plan</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -631,8 +631,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -642,8 +642,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -653,8 +653,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -664,8 +664,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -675,8 +675,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -686,8 +686,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -697,8 +697,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -708,8 +708,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -719,8 +719,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -730,8 +730,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -752,8 +752,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -763,8 +763,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -774,8 +774,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -785,8 +785,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -796,8 +796,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -807,8 +807,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -818,8 +818,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -829,8 +829,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -840,8 +840,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -851,8 +851,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Report</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -873,8 +873,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -884,8 +884,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -895,8 +895,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -906,8 +906,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -917,8 +917,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -928,8 +928,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -939,8 +939,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -950,8 +950,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -961,8 +961,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -972,8 +972,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -994,8 +994,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1005,8 +1005,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1016,8 +1016,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1027,8 +1027,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1038,8 +1038,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1049,8 +1049,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1060,8 +1060,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1071,8 +1071,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1082,8 +1082,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1093,8 +1093,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Task</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1115,8 +1115,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1126,8 +1126,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1137,8 +1137,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1148,8 +1148,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1159,8 +1159,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1170,8 +1170,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1181,8 +1181,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1192,8 +1192,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1203,8 +1203,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1214,8 +1214,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>teammate</methodName>
-      <methodSignature>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>teammate(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1236,8 +1236,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>campaign</methodName>
-      <methodSignature>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>campaign(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1247,8 +1247,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>goal</methodName>
-      <methodSignature>goal(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>goal(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1258,8 +1258,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>lead</methodName>
-      <methodSignature>lead(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>lead(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1269,8 +1269,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>opportunity</methodName>
-      <methodSignature>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>opportunity(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1280,8 +1280,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>plan</methodName>
-      <methodSignature>plan(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>plan(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1291,8 +1291,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>region</methodName>
-      <methodSignature>region(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>region(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1302,8 +1302,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>report</methodName>
-      <methodSignature>report(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>report(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1313,8 +1313,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>source</methodName>
-      <methodSignature>source(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>source(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1324,8 +1324,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>task</methodName>
-      <methodSignature>task(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>task(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1335,8 +1335,8 @@
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>team</methodName>
-      <methodSignature>team(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>team(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
