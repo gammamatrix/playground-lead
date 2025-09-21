@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Unit\Playground\Lead\Models\Lead;
 
 use Tests\Unit\Playground\Lead\Models\ModelCase;
@@ -17,9 +19,6 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
-    /**
-     * @var array<int, string> Test has one relationships.
-     */
     protected array $hasOne = [
         'creator',
         'modifier',

@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Lead\Models\Opportunity;
 
 use Tests\Feature\Playground\Lead\Models\ModelCase;
@@ -17,9 +19,6 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
-    /**
-     * @var array<string, array<string, mixed>> Test has one relationships.
-     */
     protected array $hasOne = [
         'creator' => [
             'key' => 'created_by_id',

@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Lead\Models;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -17,6 +19,8 @@ class ModelCase extends BaseModelCase
 {
     use DatabaseTransactions;
     use PackageProviders;
+
+    protected bool $debugModels = false;
 
     protected bool $hasMigrations = true;
 

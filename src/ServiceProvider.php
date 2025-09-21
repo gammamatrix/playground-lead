@@ -1,20 +1,23 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Lead;
 
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
+use Illuminate\Support\Facades\App;
 
 /**
  * \Playground\Lead\ServiceProvider
  */
 class ServiceProvider extends AuthServiceProvider
 {
-    public const VERSION = '73.0.0';
+    public const string VERSION = '74.0.0';
 
     public string $package = 'playground-lead';
 
@@ -27,13 +30,16 @@ class ServiceProvider extends AuthServiceProvider
     public function boot()
     {
         /**
-         * @var array<string, mixed> $config
+         * @var array{
+         *     about: bool,
+         *     load: array{migrations: bool}
+         * } $config
          */
         $config = config($this->package);
 
         if (! empty($config['load']) && is_array($config['load'])) {
 
-            if ($this->app->runningInConsole()) {
+            if (App::runningInConsole()) {
                 // Publish configuration
                 $this->publishes([
                     sprintf('%1$s/config/%2$s.php', dirname(__DIR__), $this->package) => config_path(sprintf('%1$s.php', $this->package)),
@@ -79,8 +85,8 @@ class ServiceProvider extends AuthServiceProvider
             '2010_09_30_000000_create_lead_reports_table.php',
             '2010_09_30_000000_create_lead_sources_table.php',
             '2010_09_30_000000_create_lead_tasks_table.php',
-            '2010_09_30_000000_create_lead_teammates_table.php',
             '2010_09_30_000000_create_lead_teams_table.php',
+            '2010_09_30_000000_create_lead_teammates_table.php',
         ] as $file) {
             $migrations[dirname(__DIR__).'/database/migrations/'.$file] = database_path('migrations/'.$file);
         }

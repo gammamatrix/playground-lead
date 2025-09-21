@@ -1,0 +1,17 @@
+{
+    "class": "2010_09_30_000000_create_lead_plans_table",
+    "config": "playground-lead",
+    "model": "Plan",
+    "model_fqdn": "Playground/Lead/Models/Plan",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "Plan",
+    "namespace": "Playground/Lead",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "table": "lead_plans",
+    "type": "playground-model",
+    "models": [],
+    "create": true,
+    "update": false
+}

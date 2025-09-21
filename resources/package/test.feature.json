@@ -1,0 +1,23 @@
+{
+    "class": "TestCase",
+    "config": "playground-lead",
+    "extends": "OrchestraTestCase",
+    "fqdn": "Tests/Feature/Playground/Lead/TestCase",
+    "model": "",
+    "model_fqdn": "",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "TestCase",
+    "namespace": "Tests/Feature/Playground/Lead",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-model-test-case",
+    "uses": [
+        "Tests/Unit/Playground/Lead/PackageProviders",
+        "Playground/Test/OrchestraTestCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

@@ -1,0 +1,16 @@
+{
+    "class": "OpportunityFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/OpportunityFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "OpportunityFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Opportunity",
+    "model_fqdn": "Playground/Lead/Models/Opportunity",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

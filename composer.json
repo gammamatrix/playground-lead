@@ -5,6 +5,10 @@
         "gammamatrix",
         "laravel",
         "lead",
+        "campaign",
+        "opportunity",
+        "opportunities",
+        "sales",
         "playground"
     ],
     "homepage": "https://github.com/gammamatrix/playground-lead",
@@ -17,11 +21,14 @@
         }
     ],
     "require": {
-        "php": "^8.2",
-        "gammamatrix/playground": "*"
+        "php": "^8.4",
+        "gammamatrix/playground": "*",
+        "illuminate/support": "^12.0",
+        "illuminate/database": "^12.0"
     },
     "require-dev": {
-        "gammamatrix/playground-test": "*"
+        "gammamatrix/playground-test": "*",
+        "illuminate/testing": "^12.0"
     },
     "suggest": {
         "gammamatrix/playground-lead-api": "Provides an API, without a UI, to interact with the models provided in this package.",
@@ -48,7 +55,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "73.x-dev"
+            "dev-develop": "74.x-dev"
         },
         "laravel": {
             "providers": [
@@ -61,7 +68,12 @@
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
         "cloc": "cloc --exclude-dir=node_modules,output,vendor .",
-        "format": "vendor/bin/php-cs-fixer fix",
-        "test": "vendor/bin/testbench package:test"
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/testbench package:test",
+        "test-dev": "vendor/bin/phpunit -c phpunit-dev.xml",
+        "test-parallel": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/paratest -c phpunit-dev.xml"
+        ]
     }
 }

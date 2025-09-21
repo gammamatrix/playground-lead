@@ -1,0 +1,16 @@
+{
+    "class": "RegionFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/RegionFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "RegionFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Region",
+    "model_fqdn": "Playground/Lead/Models/Region",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

@@ -1,0 +1,16 @@
+{
+    "class": "GoalFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/GoalFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "GoalFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Goal",
+    "model_fqdn": "Playground/Lead/Models/Goal",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

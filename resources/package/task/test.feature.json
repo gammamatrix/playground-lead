@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-lead",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Feature/Playground/Lead/Models/Task/ModelTest",
+    "model": "Task",
+    "model_fqdn": "Playground/Lead/Models/Task",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "Task",
+    "namespace": "Tests/Feature/Playground/Lead/Models/Task",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "playground": true,
+    "suite": "feature",
+    "type": "model",
+    "uses": [
+        "Tests/Feature/Playground/Lead/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

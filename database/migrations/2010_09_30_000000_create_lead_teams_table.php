@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Playground
  */
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Schema;
 /**
  * \Playground\Lead\Models\Team
  */
-return new class() extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.

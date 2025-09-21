@@ -1,0 +1,16 @@
+{
+    "class": "TeamFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/TeamFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "TeamFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Team",
+    "model_fqdn": "Playground/Lead/Models/Team",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

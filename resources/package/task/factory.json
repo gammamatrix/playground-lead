@@ -1,0 +1,16 @@
+{
+    "class": "TaskFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/TaskFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "TaskFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Task",
+    "model_fqdn": "Playground/Lead/Models/Task",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

@@ -1,23 +1,23 @@
 {
-    "class": "Opportunity",
+    "class": "Lead",
     "config": "playground-lead",
-    "fqdn": "Playground/Lead/Models/Opportunity",
+    "fqdn": "Playground/Lead/Models/Lead",
     "module": "Lead",
     "module_slug": "lead",
-    "name": "Opportunity",
+    "name": "Lead",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
-    "model": "Opportunity",
+    "model": "Lead",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Opportunities",
-    "model_singular": "Opportunity",
-    "model_slug": "opportunity",
-    "model_slug_plural": "opportunities",
+    "model_plural": "Leads",
+    "model_singular": "Lead",
+    "model_slug": "lead",
+    "model_slug_plural": "leads",
     "recipe": "lead",
     "type": "playground-model",
-    "table": "lead_opportunities",
+    "table": "lead_leads",
     "perPage": null,
     "controller": true,
     "factory": true,
@@ -45,12 +45,12 @@
             "foreignKey": "id",
             "localKey": "goal_id"
         },
-        "lead": {
-            "comment": "The lead of the model.",
-            "accessor": "lead",
-            "related": "Lead",
+        "opportunity": {
+            "comment": "The opportunity of the model.",
+            "accessor": "opportunity",
+            "related": "Opportunity",
             "foreignKey": "id",
-            "localKey": "lead_id"
+            "localKey": "opportunity_id"
         },
         "plan": {
             "comment": "The plan of the model.",
@@ -110,14 +110,14 @@
         }
     },
     "attributes": {
-        "opportunity_type": null,
+        "lead_type": null,
         "created_by_id": null,
         "modified_by_id": null,
         "owned_by_id": null,
         "parent_id": null,
         "campaign_id": null,
         "goal_id": null,
-        "lead_id": null,
+        "opportunity_id": null,
         "plan_id": null,
         "region_id": null,
         "report_id": null,
@@ -230,7 +230,7 @@
         "sources": "{}"
     },
     "casts": {
-        "opportunity_type": "string",
+        "lead_type": "string",
         "created_at": "datetime",
         "updated_at": "datetime",
         "deleted_at": "datetime",
@@ -335,12 +335,12 @@
         "sources": "array"
     },
     "fillable": [
-        "opportunity_type",
+        "lead_type",
         "owned_by_id",
         "parent_id",
         "campaign_id",
         "goal_id",
-        "lead_id",
+        "opportunity_id",
         "plan_id",
         "region_id",
         "report_id",
@@ -460,8 +460,8 @@
                 "type": "string"
             },
             {
-                "column": "opportunity_type",
-                "label": "Opportunity Type",
+                "column": "lead_type",
+                "label": "Lead Type",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -516,8 +516,8 @@
                 "type": "uuid"
             },
             {
-                "column": "lead_id",
-                "label": "Lead id",
+                "column": "opportunity_id",
+                "label": "Opportunity id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1436,8 +1436,8 @@
             "type": "string"
         },
         {
-            "column": "opportunity_type",
-            "label": "Opportunity Type",
+            "column": "lead_type",
+            "label": "Lead Type",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1485,8 +1485,8 @@
             "type": "uuid"
         },
         {
-            "column": "lead_id",
-            "label": "Lead id",
+            "column": "opportunity_id",
+            "label": "Opportunity id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -2263,7 +2263,7 @@
         }
     ],
     "create": {
-        "migration": "2010_09_30_000000_create_lead_opportunities_table",
+        "migration": "2010_09_30_000000_create_lead_leads_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,
@@ -2273,9 +2273,9 @@
             "with": false
         },
         "ids": {
-            "opportunity_type": {
-                "column": "opportunity_type",
-                "label": "Opportunity Type",
+            "lead_type": {
+                "column": "lead_type",
+                "label": "Lead Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",
@@ -2372,13 +2372,13 @@
                 "unsigned": false,
                 "type": "uuid"
             },
-            "lead_id": {
-                "column": "lead_id",
-                "label": "Lead id",
+            "opportunity_id": {
+                "column": "opportunity_id",
+                "label": "Opportunity id",
                 "description": "",
                 "foreign": {
                     "references": "id",
-                    "on": "lead_leads"
+                    "on": "lead_opportunities"
                 },
                 "icon": "",
                 "index": true,
@@ -2616,17 +2616,6 @@
                 "readOnly": false,
                 "type": "dateTime"
             },
-            "resumed_at": {
-                "column": "resumed_at",
-                "label": "Resumed at",
-                "description": "",
-                "icon": "",
-                "html": false,
-                "index": false,
-                "nullable": true,
-                "readOnly": false,
-                "type": "dateTime"
-            },
             "resolved_at": {
                 "column": "resolved_at",
                 "label": "Resolved at",
@@ -2634,6 +2623,17 @@
                 "icon": "",
                 "html": false,
                 "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "type": "dateTime"
+            },
+            "resumed_at": {
+                "column": "resumed_at",
+                "label": "Resumed at",
+                "description": "",
+                "icon": "",
+                "html": false,
+                "index": false,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -3731,6 +3731,9 @@
     },
     "uses": [
         "Illuminate/Database/Eloquent/Relations/HasOne",
-        "Playground/Models/Model"
+        "Playground/Models/Model",
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Database/Factories/Playground/Lead/Models/LeadFactory",
+        "Illuminate/Support/Carbon"
     ]
 }

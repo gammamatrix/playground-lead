@@ -1,23 +1,23 @@
 {
-    "class": "Task",
+    "class": "Campaign",
     "config": "playground-lead",
-    "fqdn": "Playground/Lead/Models/Task",
+    "fqdn": "Playground/Lead/Models/Campaign",
     "module": "Lead",
     "module_slug": "lead",
-    "name": "Task",
+    "name": "Campaign",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
-    "model": "Task",
+    "model": "Campaign",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Tasks",
-    "model_singular": "Task",
-    "model_slug": "task",
-    "model_slug_plural": "tasks",
+    "model_plural": "Campaigns",
+    "model_singular": "Campaign",
+    "model_slug": "campaign",
+    "model_slug_plural": "campaigns",
     "recipe": "lead",
     "type": "playground-model",
-    "table": "lead_tasks",
+    "table": "lead_campaigns",
     "perPage": null,
     "controller": true,
     "factory": true,
@@ -31,13 +31,6 @@
     "extends": "Model",
     "implements": [],
     "HasOne": {
-        "campaign": {
-            "comment": "The campaign of the model.",
-            "accessor": "campaign",
-            "related": "Campaign",
-            "foreignKey": "id",
-            "localKey": "campaign_id"
-        },
         "goal": {
             "comment": "The goal of the model.",
             "accessor": "goal",
@@ -87,6 +80,13 @@
             "foreignKey": "id",
             "localKey": "source_id"
         },
+        "task": {
+            "comment": "The task of the model.",
+            "accessor": "task",
+            "related": "Task",
+            "foreignKey": "id",
+            "localKey": "task_id"
+        },
         "team": {
             "comment": "The team of the model.",
             "accessor": "team",
@@ -110,12 +110,11 @@
         }
     },
     "attributes": {
-        "task_type": null,
+        "campaign_type": null,
         "created_by_id": null,
         "modified_by_id": null,
         "owned_by_id": null,
         "parent_id": null,
-        "campaign_id": null,
         "goal_id": null,
         "lead_id": null,
         "opportunity_id": null,
@@ -123,6 +122,7 @@
         "region_id": null,
         "report_id": null,
         "source_id": null,
+        "task_id": null,
         "team_id": null,
         "teammate_id": null,
         "matrix_id": null,
@@ -230,7 +230,7 @@
         "sources": "{}"
     },
     "casts": {
-        "task_type": "string",
+        "campaign_type": "string",
         "created_at": "datetime",
         "updated_at": "datetime",
         "deleted_at": "datetime",
@@ -335,10 +335,9 @@
         "sources": "array"
     },
     "fillable": [
-        "task_type",
+        "campaign_type",
         "owned_by_id",
         "parent_id",
-        "campaign_id",
         "goal_id",
         "lead_id",
         "opportunity_id",
@@ -346,6 +345,7 @@
         "region_id",
         "report_id",
         "source_id",
+        "task_id",
         "team_id",
         "teammate_id",
         "matrix_id",
@@ -460,8 +460,8 @@
                 "type": "string"
             },
             {
-                "column": "task_type",
-                "label": "Task Type",
+                "column": "campaign_type",
+                "label": "Campaign Type",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -494,14 +494,6 @@
             {
                 "column": "parent_id",
                 "label": "Parent id",
-                "icon": "",
-                "nullable": true,
-                "unsigned": true,
-                "type": "uuid"
-            },
-            {
-                "column": "campaign_id",
-                "label": "Campaign id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -558,6 +550,14 @@
             {
                 "column": "source_id",
                 "label": "Source id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "task_id",
+                "label": "Task id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1436,8 +1436,8 @@
             "type": "string"
         },
         {
-            "column": "task_type",
-            "label": "Task Type",
+            "column": "campaign_type",
+            "label": "Campaign Type",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1466,13 +1466,6 @@
         {
             "column": "parent_id",
             "label": "Parent id",
-            "icon": "",
-            "nullable": false,
-            "type": "uuid"
-        },
-        {
-            "column": "campaign_id",
-            "label": "Campaign id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1522,6 +1515,13 @@
         {
             "column": "source_id",
             "label": "Source id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "task_id",
+            "label": "Task id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -2263,7 +2263,7 @@
         }
     ],
     "create": {
-        "migration": "2010_09_30_000000_create_lead_tasks_table",
+        "migration": "2010_09_30_000000_create_lead_campaigns_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,
@@ -2273,9 +2273,9 @@
             "with": false
         },
         "ids": {
-            "task_type": {
-                "column": "task_type",
-                "label": "Task Type",
+            "campaign_type": {
+                "column": "campaign_type",
+                "label": "Campaign Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",
@@ -2335,21 +2335,6 @@
                 "label": "Parent id",
                 "description": "",
                 "foreign": null,
-                "icon": "",
-                "index": true,
-                "nullable": true,
-                "readOnly": false,
-                "unsigned": false,
-                "type": "uuid"
-            },
-            "campaign_id": {
-                "column": "campaign_id",
-                "label": "Campaign id",
-                "description": "",
-                "foreign": {
-                    "references": "id",
-                    "on": "lead_campaigns"
-                },
                 "icon": "",
                 "index": true,
                 "nullable": true,
@@ -2454,6 +2439,21 @@
                 "foreign": {
                     "references": "id",
                     "on": "lead_sources"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "task_id": {
+                "column": "task_id",
+                "label": "Task id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_tasks"
                 },
                 "icon": "",
                 "index": true,
@@ -2616,17 +2616,6 @@
                 "readOnly": false,
                 "type": "dateTime"
             },
-            "resumed_at": {
-                "column": "resumed_at",
-                "label": "Resumed at",
-                "description": "",
-                "icon": "",
-                "html": false,
-                "index": false,
-                "nullable": true,
-                "readOnly": false,
-                "type": "dateTime"
-            },
             "resolved_at": {
                 "column": "resolved_at",
                 "label": "Resolved at",
@@ -2634,6 +2623,17 @@
                 "icon": "",
                 "html": false,
                 "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "type": "dateTime"
+            },
+            "resumed_at": {
+                "column": "resumed_at",
+                "label": "Resumed at",
+                "description": "",
+                "icon": "",
+                "html": false,
+                "index": false,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -3731,6 +3731,9 @@
     },
     "uses": [
         "Illuminate/Database/Eloquent/Relations/HasOne",
-        "Playground/Models/Model"
+        "Playground/Models/Model",
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Database/Factories/Playground/Lead/Models/CampaignFactory",
+        "Illuminate/Support/Carbon"
     ]
 }

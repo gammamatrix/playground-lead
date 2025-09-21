@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class PlanFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Plan>
-     */
-    public function locked(): Factory
+    public function locked(): PlanFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Plan>
-     */
-    public function featured(): Factory
+    public function featured(): PlanFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Plan>
-     */
-    public function special(): Factory
+    public function special(): PlanFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,

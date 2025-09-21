@@ -1,0 +1,16 @@
+{
+    "class": "CampaignFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/CampaignFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "CampaignFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Campaign",
+    "model_fqdn": "Playground/Lead/Models/Campaign",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

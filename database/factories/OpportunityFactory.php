@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class OpportunityFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Opportunity>
-     */
-    public function locked(): Factory
+    public function locked(): OpportunityFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Opportunity>
-     */
-    public function featured(): Factory
+    public function featured(): OpportunityFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Opportunity>
-     */
-    public function special(): Factory
+    public function special(): OpportunityFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,

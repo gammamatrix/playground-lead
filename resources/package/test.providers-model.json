@@ -1,0 +1,24 @@
+{
+    "class": "PackageProviders",
+    "config": "playground-lead",
+    "extends": "",
+    "fqdn": "Tests/Unit/Playground/Lead/PackageProviders",
+    "model": "",
+    "model_fqdn": "",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "PackageProviders",
+    "namespace": "Tests/Unit/Playground/Lead",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "playground": true,
+    "suite": "unit",
+    "type": "providers-model",
+    "uses": [],
+    "models": [],
+    "package_providers": [
+        "\\Playground\\Test\\ServiceProvider::class",
+        "\\Playground\\ServiceProvider::class",
+        "\\Playground\\Lead\\ServiceProvider::class"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "class": "ModelCase",
+    "config": "playground-lead",
+    "extends": "Playground/Test/Feature/Models/ModelCase as BaseModelCase",
+    "fqdn": "Tests/Feature/Playground/Lead/Models/Models",
+    "model": "",
+    "model_fqdn": "",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "ModelCase",
+    "namespace": "Tests/Feature/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "playground": true,
+    "suite": "feature",
+    "type": "model-case",
+    "uses": [
+        "Tests/Unit/Playground/Lead/PackageProviders"
+    ],
+    "models": [],
+    "package_providers": []
+}

@@ -1,0 +1,16 @@
+{
+    "class": "LeadFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/LeadFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "LeadFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Lead",
+    "model_fqdn": "Playground/Lead/Models/Lead",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

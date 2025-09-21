@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-lead",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Unit/Playground/Lead/Models/Team/ModelTest",
+    "model": "Team",
+    "model_fqdn": "Playground/Lead/Models/Team",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "Team",
+    "namespace": "Tests/Unit/Playground/Lead/Models/Team",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "playground": true,
+    "suite": "unit",
+    "type": "model",
+    "uses": [
+        "Tests/Unit/Playground/Lead/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

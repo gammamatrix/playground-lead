@@ -1,23 +1,23 @@
 {
-    "class": "Goal",
+    "class": "Region",
     "config": "playground-lead",
-    "fqdn": "Playground/Lead/Models/Goal",
+    "fqdn": "Playground/Lead/Models/Region",
     "module": "Lead",
     "module_slug": "lead",
-    "name": "Goal",
+    "name": "Region",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
-    "model": "Goal",
+    "model": "Region",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Goals",
-    "model_singular": "Goal",
-    "model_slug": "goal",
-    "model_slug_plural": "goals",
+    "model_plural": "Regions",
+    "model_singular": "Region",
+    "model_slug": "region",
+    "model_slug_plural": "regions",
     "recipe": "lead",
     "type": "playground-model",
-    "table": "lead_goals",
+    "table": "lead_regions",
     "perPage": null,
     "controller": true,
     "factory": true,
@@ -37,6 +37,13 @@
             "related": "Campaign",
             "foreignKey": "id",
             "localKey": "campaign_id"
+        },
+        "goal": {
+            "comment": "The goal of the model.",
+            "accessor": "goal",
+            "related": "Goal",
+            "foreignKey": "id",
+            "localKey": "goal_id"
         },
         "lead": {
             "comment": "The lead of the model.",
@@ -58,13 +65,6 @@
             "related": "Plan",
             "foreignKey": "id",
             "localKey": "plan_id"
-        },
-        "region": {
-            "comment": "The region of the model.",
-            "accessor": "region",
-            "related": "Region",
-            "foreignKey": "id",
-            "localKey": "region_id"
         },
         "report": {
             "comment": "The report of the model.",
@@ -110,16 +110,16 @@
         }
     },
     "attributes": {
-        "goal_type": null,
+        "region_type": null,
         "created_by_id": null,
         "modified_by_id": null,
         "owned_by_id": null,
         "parent_id": null,
         "campaign_id": null,
+        "goal_id": null,
         "lead_id": null,
         "opportunity_id": null,
         "plan_id": null,
-        "region_id": null,
         "report_id": null,
         "source_id": null,
         "task_id": null,
@@ -230,7 +230,7 @@
         "sources": "{}"
     },
     "casts": {
-        "goal_type": "string",
+        "region_type": "string",
         "created_at": "datetime",
         "updated_at": "datetime",
         "deleted_at": "datetime",
@@ -335,14 +335,14 @@
         "sources": "array"
     },
     "fillable": [
-        "goal_type",
+        "region_type",
         "owned_by_id",
         "parent_id",
         "campaign_id",
+        "goal_id",
         "lead_id",
         "opportunity_id",
         "plan_id",
-        "region_id",
         "report_id",
         "source_id",
         "task_id",
@@ -460,8 +460,8 @@
                 "type": "string"
             },
             {
-                "column": "goal_type",
-                "label": "Goal Type",
+                "column": "region_type",
+                "label": "Region Type",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -508,6 +508,14 @@
                 "type": "uuid"
             },
             {
+                "column": "goal_id",
+                "label": "Goal id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
                 "column": "lead_id",
                 "label": "Lead id",
                 "icon": "",
@@ -526,14 +534,6 @@
             {
                 "column": "plan_id",
                 "label": "Plan id",
-                "icon": "",
-                "nullable": true,
-                "unsigned": true,
-                "type": "uuid"
-            },
-            {
-                "column": "region_id",
-                "label": "Region id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1436,8 +1436,8 @@
             "type": "string"
         },
         {
-            "column": "goal_type",
-            "label": "Goal Type",
+            "column": "region_type",
+            "label": "Region Type",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1478,6 +1478,13 @@
             "type": "uuid"
         },
         {
+            "column": "goal_id",
+            "label": "Goal id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
             "column": "lead_id",
             "label": "Lead id",
             "icon": "",
@@ -1494,13 +1501,6 @@
         {
             "column": "plan_id",
             "label": "Plan id",
-            "icon": "",
-            "nullable": false,
-            "type": "uuid"
-        },
-        {
-            "column": "region_id",
-            "label": "Region id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -2263,7 +2263,7 @@
         }
     ],
     "create": {
-        "migration": "2010_09_30_000000_create_lead_goals_table",
+        "migration": "2010_09_30_000000_create_lead_regions_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,
@@ -2273,9 +2273,9 @@
             "with": false
         },
         "ids": {
-            "goal_type": {
-                "column": "goal_type",
-                "label": "Goal Type",
+            "region_type": {
+                "column": "region_type",
+                "label": "Region Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",
@@ -2357,6 +2357,21 @@
                 "unsigned": false,
                 "type": "uuid"
             },
+            "goal_id": {
+                "column": "goal_id",
+                "label": "Goal id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_goals"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
             "lead_id": {
                 "column": "lead_id",
                 "label": "Lead id",
@@ -2394,21 +2409,6 @@
                 "foreign": {
                     "references": "id",
                     "on": "lead_plans"
-                },
-                "icon": "",
-                "index": true,
-                "nullable": true,
-                "readOnly": false,
-                "unsigned": false,
-                "type": "uuid"
-            },
-            "region_id": {
-                "column": "region_id",
-                "label": "Region id",
-                "description": "",
-                "foreign": {
-                    "references": "id",
-                    "on": "lead_regions"
                 },
                 "icon": "",
                 "index": true,
@@ -2616,17 +2616,6 @@
                 "readOnly": false,
                 "type": "dateTime"
             },
-            "resumed_at": {
-                "column": "resumed_at",
-                "label": "Resumed at",
-                "description": "",
-                "icon": "",
-                "html": false,
-                "index": false,
-                "nullable": true,
-                "readOnly": false,
-                "type": "dateTime"
-            },
             "resolved_at": {
                 "column": "resolved_at",
                 "label": "Resolved at",
@@ -2634,6 +2623,17 @@
                 "icon": "",
                 "html": false,
                 "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "type": "dateTime"
+            },
+            "resumed_at": {
+                "column": "resumed_at",
+                "label": "Resumed at",
+                "description": "",
+                "icon": "",
+                "html": false,
+                "index": false,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -3731,6 +3731,9 @@
     },
     "uses": [
         "Illuminate/Database/Eloquent/Relations/HasOne",
-        "Playground/Models/Model"
+        "Playground/Models/Model",
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Database/Factories/Playground/Lead/Models/RegionFactory",
+        "Illuminate/Support/Carbon"
     ]
 }

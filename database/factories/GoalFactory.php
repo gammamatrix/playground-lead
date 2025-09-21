@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class GoalFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Goal>
-     */
-    public function locked(): Factory
+    public function locked(): GoalFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Goal>
-     */
-    public function featured(): Factory
+    public function featured(): GoalFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Goal>
-     */
-    public function special(): Factory
+    public function special(): GoalFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,

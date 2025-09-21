@@ -1,12 +1,17 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Lead\Models;
 
+use Database\Factories\Playground\Lead\Models\GoalFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Support\Carbon;
 use Playground\Models\Model;
 
 /**
@@ -57,17 +62,17 @@ use Playground\Models\Model;
  * @property int $status
  * @property int $rank
  * @property int $size
- * @property ?array $matrix
+ * @property ?array<string, mixed> $matrix
  * @property ?int $x
  * @property ?int $y
  * @property ?int $z
- * @property ?double $r
- * @property ?double $theta
- * @property ?double $rho
- * @property ?double $phi
- * @property ?double $elevation
- * @property ?double $latitude
- * @property ?double $longitude
+ * @property ?float $r
+ * @property ?float $theta
+ * @property ?float $rho
+ * @property ?float $phi
+ * @property ?float $elevation
+ * @property ?float $latitude
+ * @property ?float $longitude
  * @property bool $active
  * @property bool $canceled
  * @property bool $closed
@@ -105,42 +110,40 @@ use Playground\Models\Model;
  * @property ?string $phone
  * @property ?string $team_role
  * @property ?string $currency
- * @property ?double $amount
- * @property ?double $bonus
- * @property ?double $bonus_rate
- * @property ?double $commission
- * @property ?double $commission_rate
- * @property ?double $estimate
- * @property ?double $fees
- * @property ?double $materials
- * @property ?double $services
- * @property ?double $shipping
- * @property ?double $subtotal
- * @property ?double $taxable
- * @property ?double $tax_rate
- * @property ?double $taxes
- * @property ?double $total
+ * @property ?float $amount
+ * @property ?float $bonus
+ * @property ?float $bonus_rate
+ * @property ?float $commission
+ * @property ?float $commission_rate
+ * @property ?float $estimate
+ * @property ?float $fees
+ * @property ?float $materials
+ * @property ?float $services
+ * @property ?float $shipping
+ * @property ?float $subtotal
+ * @property ?float $taxable
+ * @property ?float $tax_rate
+ * @property ?float $taxes
+ * @property ?float $total
  * @property string $icon
  * @property string $image
  * @property string $avatar
- * @property ?array $ui
- * @property ?array $address
- * @property ?array $assets
- * @property ?array $contact
- * @property ?array $meta
- * @property ?array $notes
- * @property ?array $options
- * @property ?array $sources
+ * @property ?array<string, mixed> $ui
+ * @property ?array<string, mixed> $address
+ * @property ?array<string, mixed> $assets
+ * @property ?array<string, mixed> $contact
+ * @property ?array<string, mixed> $meta
+ * @property ?array<int, array<string, mixed>> $notes
+ * @property ?array<string, mixed> $options
+ * @property ?array<string, mixed> $sources
  */
 class Goal extends Model
 {
+    /** @use HasFactory<GoalFactory> */
+    use HasFactory;
+
     protected $table = 'lead_goals';
 
-    /**
-     * The default values for attributes.
-     *
-     * @var array<string, mixed>
-     */
     protected $attributes = [
         'goal_type' => null,
         'created_by_id' => null,
@@ -262,11 +265,6 @@ class Goal extends Model
         'sources' => '{}',
     ];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'goal_type',
         'owned_by_id',
@@ -382,11 +380,6 @@ class Goal extends Model
         'sources',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
@@ -499,7 +492,7 @@ class Goal extends Model
     /**
      * The campaign of the model.
      *
-     * @return HasOne<Campaign>
+     * @return HasOne<Campaign, $this>
      */
     public function campaign(): HasOne
     {
@@ -513,7 +506,7 @@ class Goal extends Model
     /**
      * The lead of the model.
      *
-     * @return HasOne<Lead>
+     * @return HasOne<Lead, $this>
      */
     public function lead(): HasOne
     {
@@ -527,7 +520,7 @@ class Goal extends Model
     /**
      * The opportunity of the model.
      *
-     * @return HasOne<Opportunity>
+     * @return HasOne<Opportunity, $this>
      */
     public function opportunity(): HasOne
     {
@@ -541,7 +534,7 @@ class Goal extends Model
     /**
      * The plan of the model.
      *
-     * @return HasOne<Plan>
+     * @return HasOne<Plan, $this>
      */
     public function plan(): HasOne
     {
@@ -555,7 +548,7 @@ class Goal extends Model
     /**
      * The region of the model.
      *
-     * @return HasOne<Region>
+     * @return HasOne<Region, $this>
      */
     public function region(): HasOne
     {
@@ -569,7 +562,7 @@ class Goal extends Model
     /**
      * The report of the model.
      *
-     * @return HasOne<Report>
+     * @return HasOne<Report, $this>
      */
     public function report(): HasOne
     {
@@ -583,7 +576,7 @@ class Goal extends Model
     /**
      * The source of the model.
      *
-     * @return HasOne<Source>
+     * @return HasOne<Source, $this>
      */
     public function source(): HasOne
     {
@@ -597,7 +590,7 @@ class Goal extends Model
     /**
      * The task of the model.
      *
-     * @return HasOne<Task>
+     * @return HasOne<Task, $this>
      */
     public function task(): HasOne
     {
@@ -611,7 +604,7 @@ class Goal extends Model
     /**
      * The team of the model.
      *
-     * @return HasOne<Team>
+     * @return HasOne<Team, $this>
      */
     public function team(): HasOne
     {
@@ -625,7 +618,7 @@ class Goal extends Model
     /**
      * The teammate of the model.
      *
-     * @return HasOne<Teammate>
+     * @return HasOne<Teammate, $this>
      */
     public function teammate(): HasOne
     {

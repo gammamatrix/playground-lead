@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Unit\Playground\Lead;
 
 /**
@@ -16,6 +18,7 @@ trait PackageProviders
     protected function getPackageProviders($app)
     {
         return [
+            \Playground\Test\ServiceProvider::class,
             \Playground\ServiceProvider::class,
             \Playground\Lead\ServiceProvider::class,
         ];

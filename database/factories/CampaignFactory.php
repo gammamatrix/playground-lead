@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class CampaignFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Campaign>
-     */
-    public function locked(): Factory
+    public function locked(): CampaignFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Campaign>
-     */
-    public function featured(): Factory
+    public function featured(): CampaignFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Campaign>
-     */
-    public function special(): Factory
+    public function special(): CampaignFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,

@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class TeammateFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Teammate>
-     */
-    public function locked(): Factory
+    public function locked(): TeammateFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Teammate>
-     */
-    public function featured(): Factory
+    public function featured(): TeammateFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Teammate>
-     */
-    public function special(): Factory
+    public function special(): TeammateFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,

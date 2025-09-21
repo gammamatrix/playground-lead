@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-lead",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Unit/Playground/Lead/Models/Region/ModelTest",
+    "model": "Region",
+    "model_fqdn": "Playground/Lead/Models/Region",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "Region",
+    "namespace": "Tests/Unit/Playground/Lead/Models/Region",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "playground": true,
+    "suite": "unit",
+    "type": "model",
+    "uses": [
+        "Tests/Unit/Playground/Lead/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

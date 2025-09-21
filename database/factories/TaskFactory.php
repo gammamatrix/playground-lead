@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class TaskFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Task>
-     */
-    public function locked(): Factory
+    public function locked(): TaskFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Task>
-     */
-    public function featured(): Factory
+    public function featured(): TaskFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Task>
-     */
-    public function special(): Factory
+    public function special(): TaskFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,

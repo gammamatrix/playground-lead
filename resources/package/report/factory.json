@@ -1,0 +1,16 @@
+{
+    "class": "ReportFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/ReportFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "ReportFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Report",
+    "model_fqdn": "Playground/Lead/Models/Report",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

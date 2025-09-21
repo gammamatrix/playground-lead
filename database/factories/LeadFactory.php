@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Lead\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,30 +48,21 @@ class LeadFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Lead>
-     */
-    public function locked(): Factory
+    public function locked(): LeadFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Lead>
-     */
-    public function featured(): Factory
+    public function featured(): LeadFactory
     {
         return $this->state(fn (array $attributes) => [
             'featured' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Lead>
-     */
-    public function special(): Factory
+    public function special(): LeadFactory
     {
         return $this->state(fn (array $attributes) => [
             'special' => true,
