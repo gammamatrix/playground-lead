@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Lead;
 
+use Playground\ServiceProvider;
+
 /**
  * \Tests\Unit\Playground\Lead\PackageProviders
  */
@@ -19,7 +21,7 @@ trait PackageProviders
     {
         return [
             \Playground\Test\ServiceProvider::class,
-            \Playground\ServiceProvider::class,
+            ServiceProvider::class,
             \Playground\Lead\ServiceProvider::class,
         ];
     }
