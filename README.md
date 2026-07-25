@@ -41,8 +41,8 @@ php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="p
 
 ### Environment Variables
 
-| env()                                | config()                         | Default |
-|--------------------------------------|----------------------------------|---------|
+| env()                             | config()                          | Default |
+|-----------------------------------|-----------------------------------|---------|
 | `PLAYGROUND_LEAD_ABOUT`           | `playground-lead.about`           | `true`  |
 | `PLAYGROUND_LEAD_LOAD_MIGRATIONS` | `playground-lead.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
@@ -82,22 +82,22 @@ composer cloc
 
 ```
 ➜  playground-lead git:(develop) ✗ composer cloc
-     139 text files.
-     135 unique files.
-      17 files ignored.
+     147 text files.
+     142 unique files.
+      30 files ignored.
 
-github.com/AlDanial/cloc v 2.06  T=0.07 s (1866.5 files/s, 753797.3 lines/s)
+github.com/AlDanial/cloc v 2.08  T=0.09 s (1589.6 files/s, 618232.4 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            64              0              0          42289
-PHP                             63            850           2629           8059
+JSON                            64              0              0          42294
+PHP                             63            851           2629           8205
+XML                             10              0              7            774
 YAML                             1              5              0            275
-XML                              3              0              7            218
 Markdown                         3             46              0            127
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                           135            904           2636          50980
+SUM:                           142            905           2636          51687
 -------------------------------------------------------------------------------
 ```
 

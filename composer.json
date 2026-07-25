@@ -1,6 +1,6 @@
 {
     "name": "gammamatrix/playground-lead",
-    "description": "Playground: Provide the Lead models for the Playground Lead System.",
+    "description": "Playground: Provides the models for the Playground Campaign and Lead Sales Management tool.",
     "keywords": [
         "gammamatrix",
         "laravel",
