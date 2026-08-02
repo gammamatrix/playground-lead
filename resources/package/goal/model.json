@@ -32,70 +32,70 @@
     "implements": [],
     "HasOne": {
         "campaign": {
-            "comment": "The campaign of the model.",
+            "comment": "The campaign of the goal.",
             "accessor": "campaign",
             "related": "Campaign",
             "foreignKey": "id",
             "localKey": "campaign_id"
         },
         "lead": {
-            "comment": "The lead of the model.",
+            "comment": "The lead of the goal.",
             "accessor": "lead",
             "related": "Lead",
             "foreignKey": "id",
             "localKey": "lead_id"
         },
         "opportunity": {
-            "comment": "The opportunity of the model.",
+            "comment": "The opportunity of the goal.",
             "accessor": "opportunity",
             "related": "Opportunity",
             "foreignKey": "id",
             "localKey": "opportunity_id"
         },
         "plan": {
-            "comment": "The plan of the model.",
+            "comment": "The plan of the goal.",
             "accessor": "plan",
             "related": "Plan",
             "foreignKey": "id",
             "localKey": "plan_id"
         },
         "region": {
-            "comment": "The region of the model.",
+            "comment": "The region of the goal.",
             "accessor": "region",
             "related": "Region",
             "foreignKey": "id",
             "localKey": "region_id"
         },
         "report": {
-            "comment": "The report of the model.",
+            "comment": "The report of the goal.",
             "accessor": "report",
             "related": "Report",
             "foreignKey": "id",
             "localKey": "report_id"
         },
         "source": {
-            "comment": "The source of the model.",
+            "comment": "The source of the goal.",
             "accessor": "source",
             "related": "Source",
             "foreignKey": "id",
             "localKey": "source_id"
         },
         "task": {
-            "comment": "The task of the model.",
+            "comment": "The task of the goal.",
             "accessor": "task",
             "related": "Task",
             "foreignKey": "id",
             "localKey": "task_id"
         },
         "team": {
-            "comment": "The team of the model.",
+            "comment": "The team of the goal.",
             "accessor": "team",
             "related": "Team",
             "foreignKey": "id",
             "localKey": "team_id"
         },
         "teammate": {
-            "comment": "The teammate of the model.",
+            "comment": "The teammate of the goal.",
             "accessor": "teammate",
             "related": "Teammate",
             "foreignKey": "id",
@@ -115,6 +115,7 @@
         "modified_by_id": null,
         "owned_by_id": null,
         "parent_id": null,
+        "matrix_id": null,
         "campaign_id": null,
         "lead_id": null,
         "opportunity_id": null,
@@ -125,7 +126,6 @@
         "task_id": null,
         "team_id": null,
         "teammate_id": null,
-        "matrix_id": null,
         "created_at": null,
         "updated_at": null,
         "deleted_at": null,
@@ -138,8 +138,8 @@
         "postponed_at": null,
         "published_at": null,
         "released_at": null,
-        "resumed_at": null,
         "resolved_at": null,
+        "resumed_at": null,
         "suspended_at": null,
         "timer_end_at": null,
         "timer_start_at": null,
@@ -243,8 +243,8 @@
         "postponed_at": "datetime",
         "published_at": "datetime",
         "released_at": "datetime",
-        "resumed_at": "datetime",
         "resolved_at": "datetime",
+        "resumed_at": "datetime",
         "suspended_at": "datetime",
         "timer_end_at": "datetime",
         "timer_start_at": "datetime",
@@ -338,6 +338,7 @@
         "goal_type",
         "owned_by_id",
         "parent_id",
+        "matrix_id",
         "campaign_id",
         "lead_id",
         "opportunity_id",
@@ -348,7 +349,6 @@
         "task_id",
         "team_id",
         "teammate_id",
-        "matrix_id",
         "canceled_at",
         "closed_at",
         "embargo_at",
@@ -358,8 +358,8 @@
         "postponed_at",
         "published_at",
         "released_at",
-        "resumed_at",
         "resolved_at",
+        "resumed_at",
         "suspended_at",
         "timer_end_at",
         "timer_start_at",
@@ -500,6 +500,14 @@
                 "type": "uuid"
             },
             {
+                "column": "matrix_id",
+                "label": "Matrix id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
                 "column": "campaign_id",
                 "label": "Campaign id",
                 "icon": "",
@@ -574,14 +582,6 @@
             {
                 "column": "teammate_id",
                 "label": "Teammate id",
-                "icon": "",
-                "nullable": true,
-                "unsigned": true,
-                "type": "uuid"
-            },
-            {
-                "column": "matrix_id",
-                "label": "Matrix id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -686,16 +686,16 @@
                 "type": "datetime"
             },
             {
-                "column": "resumed_at",
-                "label": "Resumed at",
+                "column": "resolved_at",
+                "label": "Resolved at",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
                 "type": "datetime"
             },
             {
-                "column": "resolved_at",
-                "label": "Resolved at",
+                "column": "resumed_at",
+                "label": "Resumed at",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -786,7 +786,7 @@
             {
                 "column": "fixed",
                 "label": "Fixed",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "nullable": true,
                 "unsigned": true,
                 "type": "boolean"
@@ -1471,6 +1471,13 @@
             "type": "uuid"
         },
         {
+            "column": "matrix_id",
+            "label": "Matrix id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
             "column": "campaign_id",
             "label": "Campaign id",
             "icon": "",
@@ -1536,13 +1543,6 @@
         {
             "column": "teammate_id",
             "label": "Teammate id",
-            "icon": "",
-            "nullable": false,
-            "type": "uuid"
-        },
-        {
-            "column": "matrix_id",
-            "label": "Matrix id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1632,15 +1632,15 @@
             "type": "string"
         },
         {
-            "column": "resumed_at",
-            "label": "Resumed at",
+            "column": "resolved_at",
+            "label": "Resolved at",
             "icon": "",
             "nullable": false,
             "type": "string"
         },
         {
-            "column": "resolved_at",
-            "label": "Resolved at",
+            "column": "resumed_at",
+            "label": "Resumed at",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1872,7 +1872,7 @@
         {
             "column": "fixed",
             "label": "Fixed",
-            "icon": "fa-solid fa-wrench",
+            "icon": "fa-solid fa-wrench text-success",
             "nullable": false,
             "type": "boolean"
         },
@@ -2342,6 +2342,21 @@
                 "unsigned": false,
                 "type": "uuid"
             },
+            "matrix_id": {
+                "column": "matrix_id",
+                "label": "Matrix id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "matrix_matrices"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
             "campaign_id": {
                 "column": "campaign_id",
                 "label": "Campaign id",
@@ -2491,21 +2506,6 @@
                 "readOnly": false,
                 "unsigned": false,
                 "type": "uuid"
-            },
-            "matrix_id": {
-                "column": "matrix_id",
-                "label": "Matrix id",
-                "description": "",
-                "foreign": {
-                    "references": "id",
-                    "on": "matrix_matrices"
-                },
-                "icon": "",
-                "index": true,
-                "nullable": true,
-                "readOnly": false,
-                "unsigned": false,
-                "type": "uuid"
             }
         },
         "unique": [
@@ -2611,7 +2611,7 @@
                 "description": "",
                 "icon": "",
                 "html": false,
-                "index": false,
+                "index": true,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -2754,7 +2754,7 @@
                 "column": "fixed",
                 "label": "Fixed",
                 "description": "",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "default": false,
                 "index": false,
                 "nullable": false,
@@ -3127,7 +3127,7 @@
             "bonus_rate": {
                 "column": "bonus_rate",
                 "label": "Bonus rate",
-                "description": "",
+                "description": "The bonus rate of the goal. Percent value is stored as decimal: 99% => 0.99",
                 "icon": "",
                 "html": false,
                 "index": false,
@@ -3153,7 +3153,7 @@
             "commission_rate": {
                 "column": "commission_rate",
                 "label": "Commission rate",
-                "description": "",
+                "description": "The commission rate of the goal. Percent value is stored as decimal: 99% => 0.99",
                 "icon": "",
                 "html": false,
                 "index": false,

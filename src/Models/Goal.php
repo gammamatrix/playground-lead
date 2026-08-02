@@ -23,6 +23,7 @@ use Playground\Models\Model;
  * @property ?scalar $modified_by_id
  * @property ?scalar $owned_by_id
  * @property ?string $parent_id
+ * @property ?string $matrix_id
  * @property ?string $campaign_id
  * @property ?string $lead_id
  * @property ?string $opportunity_id
@@ -33,7 +34,6 @@ use Playground\Models\Model;
  * @property ?string $task_id
  * @property ?string $team_id
  * @property ?string $teammate_id
- * @property ?string $matrix_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
@@ -46,8 +46,8 @@ use Playground\Models\Model;
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
- * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
+ * @property ?Carbon $resumed_at
  * @property ?Carbon $suspended_at
  * @property ?Carbon $timer_end_at
  * @property ?Carbon $timer_start_at
@@ -150,6 +150,7 @@ class Goal extends Model
         'modified_by_id' => null,
         'owned_by_id' => null,
         'parent_id' => null,
+        'matrix_id' => null,
         'campaign_id' => null,
         'lead_id' => null,
         'opportunity_id' => null,
@@ -160,7 +161,6 @@ class Goal extends Model
         'task_id' => null,
         'team_id' => null,
         'teammate_id' => null,
-        'matrix_id' => null,
         'created_at' => null,
         'updated_at' => null,
         'deleted_at' => null,
@@ -173,8 +173,8 @@ class Goal extends Model
         'postponed_at' => null,
         'published_at' => null,
         'released_at' => null,
-        'resumed_at' => null,
         'resolved_at' => null,
+        'resumed_at' => null,
         'suspended_at' => null,
         'timer_end_at' => null,
         'timer_start_at' => null,
@@ -269,6 +269,7 @@ class Goal extends Model
         'goal_type',
         'owned_by_id',
         'parent_id',
+        'matrix_id',
         'campaign_id',
         'lead_id',
         'opportunity_id',
@@ -279,7 +280,6 @@ class Goal extends Model
         'task_id',
         'team_id',
         'teammate_id',
-        'matrix_id',
         'canceled_at',
         'closed_at',
         'embargo_at',
@@ -289,8 +289,8 @@ class Goal extends Model
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -396,8 +396,8 @@ class Goal extends Model
             'postponed_at' => 'datetime',
             'published_at' => 'datetime',
             'released_at' => 'datetime',
-            'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
+            'resumed_at' => 'datetime',
             'suspended_at' => 'datetime',
             'timer_end_at' => 'datetime',
             'timer_start_at' => 'datetime',
@@ -490,7 +490,7 @@ class Goal extends Model
     }
 
     /**
-     * The campaign of the model.
+     * The campaign of the goal.
      *
      * @return HasOne<Campaign, $this>
      */
@@ -504,7 +504,7 @@ class Goal extends Model
     }
 
     /**
-     * The lead of the model.
+     * The lead of the goal.
      *
      * @return HasOne<Lead, $this>
      */
@@ -518,7 +518,7 @@ class Goal extends Model
     }
 
     /**
-     * The opportunity of the model.
+     * The opportunity of the goal.
      *
      * @return HasOne<Opportunity, $this>
      */
@@ -532,7 +532,7 @@ class Goal extends Model
     }
 
     /**
-     * The plan of the model.
+     * The plan of the goal.
      *
      * @return HasOne<Plan, $this>
      */
@@ -546,7 +546,7 @@ class Goal extends Model
     }
 
     /**
-     * The region of the model.
+     * The region of the goal.
      *
      * @return HasOne<Region, $this>
      */
@@ -560,7 +560,7 @@ class Goal extends Model
     }
 
     /**
-     * The report of the model.
+     * The report of the goal.
      *
      * @return HasOne<Report, $this>
      */
@@ -574,7 +574,7 @@ class Goal extends Model
     }
 
     /**
-     * The source of the model.
+     * The source of the goal.
      *
      * @return HasOne<Source, $this>
      */
@@ -588,7 +588,7 @@ class Goal extends Model
     }
 
     /**
-     * The task of the model.
+     * The task of the goal.
      *
      * @return HasOne<Task, $this>
      */
@@ -602,7 +602,7 @@ class Goal extends Model
     }
 
     /**
-     * The team of the model.
+     * The team of the goal.
      *
      * @return HasOne<Team, $this>
      */
@@ -616,7 +616,7 @@ class Goal extends Model
     }
 
     /**
-     * The teammate of the model.
+     * The teammate of the goal.
      *
      * @return HasOne<Teammate, $this>
      */
