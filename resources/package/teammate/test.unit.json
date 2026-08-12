@@ -5,6 +5,8 @@
     "fqdn": "Tests/Unit/Playground/Lead/Models/Teammate/ModelTest",
     "model": "Teammate",
     "model_fqdn": "Playground/Lead/Models/Teammate",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "Lead",
     "module_slug": "lead",
     "name": "Teammate",

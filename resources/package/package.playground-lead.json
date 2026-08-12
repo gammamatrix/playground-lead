@@ -60,11 +60,12 @@
         "Playground/Lead/ServiceProvider"
     ],
     "package_providers": [],
+    "package_repositories": [],
     "package_require": {
         "php": "^8.4",
         "gammamatrix/playground": "*",
-        "illuminate/support": "^13.0",
-        "illuminate/database": "^13.0"
+        "illuminate/database": "^13.0",
+        "illuminate/support": "^13.0"
     },
     "package_require_dev": {
         "gammamatrix/playground-test": "*",

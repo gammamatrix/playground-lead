@@ -154,7 +154,7 @@
         "status": 0,
         "rank": 0,
         "size": 0,
-        "matrix": "{}",
+        "matrix": null,
         "x": null,
         "y": null,
         "z": null,
@@ -220,14 +220,14 @@
         "icon": "",
         "image": "",
         "avatar": "",
-        "ui": "{}",
-        "address": "{}",
-        "assets": "{}",
-        "contact": "{}",
-        "meta": "{}",
+        "ui": null,
+        "address": null,
+        "assets": null,
+        "contact": null,
+        "meta": null,
         "notes": "[]",
-        "options": "{}",
-        "sources": "{}"
+        "options": null,
+        "sources": null
     },
     "casts": {
         "region_type": "string",
@@ -469,7 +469,7 @@
             },
             {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -477,7 +477,7 @@
             },
             {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -485,7 +485,7 @@
             },
             {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -778,7 +778,7 @@
             {
                 "column": "featured",
                 "label": "Featured",
-                "icon": "fa-solid fa-star text-warning",
+                "icon": "fa-solid fa-star text-primary",
                 "nullable": true,
                 "unsigned": true,
                 "type": "boolean"
@@ -881,7 +881,7 @@
             },
             {
                 "column": "sms",
-                "label": "Sms",
+                "label": "SMS",
                 "icon": "fa-solid fa-comment-sms",
                 "nullable": true,
                 "unsigned": true,
@@ -1444,21 +1444,21 @@
         },
         {
             "column": "created_by_id",
-            "label": "Created by id",
+            "label": "Created by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "modified_by_id",
-            "label": "Modified by id",
+            "label": "Modified by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "owned_by_id",
-            "label": "Owned by id",
+            "label": "Owned by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1865,7 +1865,7 @@
         {
             "column": "featured",
             "label": "Featured",
-            "icon": "fa-solid fa-star text-warning",
+            "icon": "fa-solid fa-star text-primary",
             "nullable": false,
             "type": "boolean"
         },
@@ -1955,7 +1955,7 @@
         },
         {
             "column": "sms",
-            "label": "Sms",
+            "label": "SMS",
             "icon": "fa-solid fa-comment-sms",
             "nullable": false,
             "type": "boolean"
@@ -2287,7 +2287,7 @@
             },
             "created_by_id": {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -2302,7 +2302,7 @@
             },
             "modified_by_id": {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -2317,7 +2317,7 @@
             },
             "owned_by_id": {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -2743,9 +2743,9 @@
                 "column": "featured",
                 "label": "Featured",
                 "description": "",
-                "icon": "fa-solid fa-star text-warning",
+                "icon": "fa-solid fa-star text-primary",
                 "default": false,
-                "index": false,
+                "index": true,
                 "nullable": false,
                 "readOnly": false,
                 "type": "boolean"
@@ -2884,7 +2884,7 @@
             },
             "sms": {
                 "column": "sms",
-                "label": "Sms",
+                "label": "SMS",
                 "description": "",
                 "icon": "fa-solid fa-comment-sms",
                 "default": false,
@@ -2899,7 +2899,7 @@
                 "description": "",
                 "icon": "fa-solid fa-star text-success",
                 "default": false,
-                "index": false,
+                "index": true,
                 "nullable": false,
                 "readOnly": false,
                 "type": "boolean"
@@ -3448,7 +3448,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "x": {
                 "column": "x",
@@ -3638,7 +3638,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         },
         "json": {
@@ -3652,7 +3652,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "assets": {
                 "column": "assets",
@@ -3664,7 +3664,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "contact": {
                 "column": "contact",
@@ -3676,7 +3676,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "meta": {
                 "column": "meta",
@@ -3688,7 +3688,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "notes": {
                 "column": "notes",
@@ -3713,7 +3713,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "sources": {
                 "column": "sources",
@@ -3725,7 +3725,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         }
     },

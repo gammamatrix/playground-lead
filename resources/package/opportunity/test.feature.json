@@ -5,6 +5,8 @@
     "fqdn": "Tests/Feature/Playground/Lead/Models/Opportunity/ModelTest",
     "model": "Opportunity",
     "model_fqdn": "Playground/Lead/Models/Opportunity",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "Lead",
     "module_slug": "lead",
     "name": "Opportunity",

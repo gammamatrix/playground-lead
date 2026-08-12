@@ -106,7 +106,7 @@ return new class extends Migration
             $table->boolean('completed')->default(0);
             $table->boolean('cron')->default(0)->index();
             $table->boolean('duplicate')->default(0);
-            $table->boolean('featured')->default(0);
+            $table->boolean('featured')->default(0)->index();
             $table->boolean('fixed')->default(0);
             $table->boolean('flagged')->default(0);
             $table->boolean('internal')->default(0);
@@ -120,7 +120,7 @@ return new class extends Migration
             $table->boolean('resolved')->default(0);
             $table->boolean('retired')->default(0);
             $table->boolean('sms')->default(0);
-            $table->boolean('special')->default(0);
+            $table->boolean('special')->default(0)->index();
             $table->boolean('suspended')->default(0);
             $table->boolean('unknown')->default(0);
 

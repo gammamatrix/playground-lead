@@ -5,6 +5,8 @@
     "fqdn": "Tests/Feature/Playground/Lead/Models/Plan/ModelTest",
     "model": "Plan",
     "model_fqdn": "Playground/Lead/Models/Plan",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "Lead",
     "module_slug": "lead",
     "name": "Plan",

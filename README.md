@@ -6,7 +6,7 @@
 
 The Playground Lead is a package for [Laravel](https://laravel.com/docs/12.x) applications.
 
-Playground: Provides the models for the Playground Campaign and Lead Sales Management tool.
+Playground: Provides the Lead models for the Playground Lead System.
 
 Read more on using [Playground: Lead at Read the Docs](https://gammamatrix-playground.readthedocs.io/en/develop/built-components/lead.html)
 
@@ -41,8 +41,8 @@ php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="p
 
 ### Environment Variables
 
-| env()                             | config()                          | Default |
-|-----------------------------------|-----------------------------------|---------|
+| env()                                | config()                         | Default |
+|--------------------------------------|----------------------------------|---------|
 | `PLAYGROUND_LEAD_ABOUT`           | `playground-lead.about`           | `true`  |
 | `PLAYGROUND_LEAD_LOAD_MIGRATIONS` | `playground-lead.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
@@ -81,23 +81,23 @@ composer cloc
 ```
 
 ```
-➜  playground-lead git:(develop) ✗ composer cloc  
+➜  playground-lead git:(develop) ✗ composer cloc
      147 text files.
-     142 unique files.
-      42 files ignored.
+     142 unique files.                              
+      54 files ignored.
 
-github.com/AlDanial/cloc v 2.08  T=0.10 s (1433.4 files/s, 557953.8 lines/s)
+github.com/AlDanial/cloc v 2.08  T=0.09 s (1517.9 files/s, 592250.3 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            64              0              0          42294
+JSON                            64              0              0          42351
 PHP                             63            851           2629           8205
-XML                             10              0              7            818
+XML                             10              0              7            894
 YAML                             1              5              0            275
 Markdown                         3             46              0            127
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                           142            905           2636          51731
+SUM:                           142            905           2636          51864
 -------------------------------------------------------------------------------
 ```
 
