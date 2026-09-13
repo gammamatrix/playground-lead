@@ -22,13 +22,10 @@
     ],
     "require": {
         "php": "^8.4",
-        "gammamatrix/playground": "*",
-        "illuminate/database": "^13.0",
-        "illuminate/support": "^13.0"
+        "gammamatrix/playground": "*"
     },
     "require-dev": {
-        "gammamatrix/playground-test": "*",
-        "illuminate/testing": "^13.0"
+        "gammamatrix/playground-test": "*"
     },
     "suggest": {
         "gammamatrix/playground-lead-api": "Provides an API, without a UI, to interact with the models provided in this package.",
