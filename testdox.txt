@@ -41,17 +41,27 @@ Model (Tests\Feature\Playground\Lead\Models\Source\Model)
  [x] Verify model relationships
  [x] Factory create
 
+Model (Tests\Feature\Playground\Lead\Models\Tagged\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Lead\Models\Tag\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
 Model (Tests\Feature\Playground\Lead\Models\Task\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Lead\Models\Team\Model)
+Model (Tests\Feature\Playground\Lead\Models\Teammate\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
 
-Model (Tests\Feature\Playground\Lead\Models\Teammate\Model)
+Model (Tests\Feature\Playground\Lead\Models\Team\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Factory create
@@ -96,17 +106,27 @@ Model (Tests\Unit\Playground\Lead\Models\Source\Model)
  [x] Verify model relationships
  [x] Model factory make
 
+Model (Tests\Unit\Playground\Lead\Models\Tagged\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Lead\Models\Tag\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
 Model (Tests\Unit\Playground\Lead\Models\Task\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Lead\Models\Team\Model)
+Model (Tests\Unit\Playground\Lead\Models\Teammate\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
 
-Model (Tests\Unit\Playground\Lead\Models\Teammate\Model)
+Model (Tests\Unit\Playground\Lead\Models\Team\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make

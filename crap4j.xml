@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2026-09-13 19:02:37</timestamp>
+  <timestamp>2026-10-23 18:41:04</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>125</methodCount>
+    <methodCount>261</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>135</totalCrap>
+    <totalCrap>282</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -134,6 +134,127 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Campaign</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Goal</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -251,6 +372,127 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Goal</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -376,6 +618,127 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Lead</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Opportunity</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -493,6 +856,127 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Opportunity</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -618,6 +1102,127 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Plan</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Region</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -735,6 +1340,127 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Region</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -860,6 +1586,127 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Report</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -971,6 +1818,292 @@
     <method>
       <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Source</className>
+      <methodName>teammate</methodName>
+      <methodSignature>teammate(): HasOne</methodSignature>
+      <fullMethod>teammate(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Source</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tag</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>creator</methodName>
+      <methodSignature>creator(): HasOne</methodSignature>
+      <fullMethod>creator(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>tag</methodName>
+      <methodSignature>tag(): HasOne</methodSignature>
+      <fullMethod>tag(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>campaign</methodName>
+      <methodSignature>campaign(): HasOne</methodSignature>
+      <fullMethod>campaign(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>goal</methodName>
+      <methodSignature>goal(): HasOne</methodSignature>
+      <fullMethod>goal(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>lead</methodName>
+      <methodSignature>lead(): HasOne</methodSignature>
+      <fullMethod>lead(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>opportunity</methodName>
+      <methodSignature>opportunity(): HasOne</methodSignature>
+      <fullMethod>opportunity(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>plan</methodName>
+      <methodSignature>plan(): HasOne</methodSignature>
+      <fullMethod>plan(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>region</methodName>
+      <methodSignature>region(): HasOne</methodSignature>
+      <fullMethod>region(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>report</methodName>
+      <methodSignature>report(): HasOne</methodSignature>
+      <fullMethod>report(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>source</methodName>
+      <methodSignature>source(): HasOne</methodSignature>
+      <fullMethod>source(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>task</methodName>
+      <methodSignature>task(): HasOne</methodSignature>
+      <fullMethod>task(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
+      <methodName>team</methodName>
+      <methodSignature>team(): HasOne</methodSignature>
+      <fullMethod>team(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Tagged</className>
       <methodName>teammate</methodName>
       <methodSignature>teammate(): HasOne</methodSignature>
       <fullMethod>teammate(): HasOne</fullMethod>
@@ -1102,6 +2235,127 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Task</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Team</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -1223,6 +2477,127 @@
     </method>
     <method>
       <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>teammates</methodName>
+      <methodSignature>teammates(): HasMany</methodSignature>
+      <fullMethod>teammates(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Team</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
       <className>Playground\Lead\Models\Teammate</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -1340,6 +2715,127 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>campaigns</methodName>
+      <methodSignature>campaigns(): HasMany</methodSignature>
+      <fullMethod>campaigns(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>goals</methodName>
+      <methodSignature>goals(): HasMany</methodSignature>
+      <fullMethod>goals(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>leads</methodName>
+      <methodSignature>leads(): HasMany</methodSignature>
+      <fullMethod>leads(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>opportunities</methodName>
+      <methodSignature>opportunities(): HasMany</methodSignature>
+      <fullMethod>opportunities(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>plans</methodName>
+      <methodSignature>plans(): HasMany</methodSignature>
+      <fullMethod>plans(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>regions</methodName>
+      <methodSignature>regions(): HasMany</methodSignature>
+      <fullMethod>regions(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>reports</methodName>
+      <methodSignature>reports(): HasMany</methodSignature>
+      <fullMethod>reports(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>sources</methodName>
+      <methodSignature>sources(): HasMany</methodSignature>
+      <fullMethod>sources(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>tasks</methodName>
+      <methodSignature>tasks(): HasMany</methodSignature>
+      <fullMethod>tasks(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>teams</methodName>
+      <methodSignature>teams(): HasMany</methodSignature>
+      <fullMethod>teams(): HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Lead\Models</package>
+      <className>Playground\Lead\Models\Teammate</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
