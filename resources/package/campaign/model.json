@@ -3,18 +3,38 @@
     "config": "playground-lead",
     "fqdn": "Playground/Lead/Models/Campaign",
     "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
     "module_slug": "lead",
+    "module_slugs": "leads",
     "name": "Campaign",
+    "names": "Campaigns",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
     "model": "Campaign",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Campaigns",
-    "model_singular": "Campaign",
+    "model_camel": "campaign",
+    "model_camels": "campaigns",
+    "model_label": "Campaign",
+    "model_labels": "Campaigns",
+    "model_lower": "campaign",
+    "model_lowers": "campaigns",
+    "model_kebab": "campaign",
+    "model_kebabs": "campaigns",
+    "model_plural": "",
+    "model_route_param": "campaign",
+    "model_singular": "",
     "model_slug": "campaign",
-    "model_slug_plural": "campaigns",
+    "model_slugs": "campaigns",
+    "model_slug_plural": "",
+    "model_snake": "campaign",
+    "model_snakes": "campaigns",
+    "model_studly": "Campaign",
+    "model_studlies": "Campaigns",
+    "model_variable": "campaign",
+    "model_variables": "campaigns",
     "recipe": "lead",
     "type": "playground-model",
     "table": "lead_campaigns",
@@ -102,7 +122,90 @@
             "localKey": "teammate_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "goals": {
+            "comment": "The goals of the campaign.",
+            "accessor": "goals",
+            "related": "Goal",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "leads": {
+            "comment": "The leads of the campaign.",
+            "accessor": "leads",
+            "related": "Lead",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "opportunities": {
+            "comment": "The opportunities of the campaign.",
+            "accessor": "opportunities",
+            "related": "Opportunity",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "plans": {
+            "comment": "The plans of the campaign.",
+            "accessor": "plans",
+            "related": "Plan",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "regions": {
+            "comment": "The regions of the campaign.",
+            "accessor": "regions",
+            "related": "Region",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "reports": {
+            "comment": "The reports of the campaign.",
+            "accessor": "reports",
+            "related": "Report",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "sources": {
+            "comment": "The sources of the campaign.",
+            "accessor": "sources",
+            "related": "Source",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "tasks": {
+            "comment": "The tasks of the campaign.",
+            "accessor": "tasks",
+            "related": "Task",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "teams": {
+            "comment": "The teams of the campaign.",
+            "accessor": "teams",
+            "related": "Team",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        },
+        "teammates": {
+            "comment": "The teammates of the campaign.",
+            "accessor": "teammates",
+            "related": "Teammate",
+            "foreignKey": "campaign_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the campaign.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "campaign_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -3732,6 +3835,8 @@
     "uses": [
         "Database/Factories/Playground/Lead/Models/CampaignFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

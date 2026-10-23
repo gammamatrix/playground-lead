@@ -31,6 +31,49 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    protected array $hasMany = [
+        'campaigns' => [
+            'key' => 'source_id',
+            'modelClass' => Campaign::class,
+        ],
+        'goals' => [
+            'key' => 'source_id',
+            'modelClass' => Goal::class,
+        ],
+        'leads' => [
+            'key' => 'source_id',
+            'modelClass' => Lead::class,
+        ],
+        'opportunities' => [
+            'key' => 'source_id',
+            'modelClass' => Opportunity::class,
+        ],
+        'plans' => [
+            'key' => 'source_id',
+            'modelClass' => Plan::class,
+        ],
+        'regions' => [
+            'key' => 'source_id',
+            'modelClass' => Region::class,
+        ],
+        'reports' => [
+            'key' => 'source_id',
+            'modelClass' => Report::class,
+        ],
+        'tasks' => [
+            'key' => 'source_id',
+            'modelClass' => Task::class,
+        ],
+        'teams' => [
+            'key' => 'source_id',
+            'modelClass' => Team::class,
+        ],
+        'teammates' => [
+            'key' => 'source_id',
+            'modelClass' => Teammate::class,
+        ],
+    ];
+
     protected array $hasOne = [
         'creator' => [
             'key' => 'created_by_id',

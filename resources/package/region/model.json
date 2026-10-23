@@ -3,18 +3,38 @@
     "config": "playground-lead",
     "fqdn": "Playground/Lead/Models/Region",
     "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
     "module_slug": "lead",
+    "module_slugs": "leads",
     "name": "Region",
+    "names": "Regions",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
     "model": "Region",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Regions",
-    "model_singular": "Region",
+    "model_camel": "region",
+    "model_camels": "regions",
+    "model_label": "Region",
+    "model_labels": "Regions",
+    "model_lower": "region",
+    "model_lowers": "regions",
+    "model_kebab": "region",
+    "model_kebabs": "regions",
+    "model_plural": "",
+    "model_route_param": "region",
+    "model_singular": "",
     "model_slug": "region",
-    "model_slug_plural": "regions",
+    "model_slugs": "regions",
+    "model_slug_plural": "",
+    "model_snake": "region",
+    "model_snakes": "regions",
+    "model_studly": "Region",
+    "model_studlies": "Regions",
+    "model_variable": "region",
+    "model_variables": "regions",
     "recipe": "lead",
     "type": "playground-model",
     "table": "lead_regions",
@@ -102,7 +122,90 @@
             "localKey": "teammate_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "campaigns": {
+            "comment": "The campaigns of the region.",
+            "accessor": "campaigns",
+            "related": "Campaign",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "goals": {
+            "comment": "The goals of the region.",
+            "accessor": "goals",
+            "related": "Goal",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "leads": {
+            "comment": "The leads of the region.",
+            "accessor": "leads",
+            "related": "Lead",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "opportunities": {
+            "comment": "The opportunities of the region.",
+            "accessor": "opportunities",
+            "related": "Opportunity",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "plans": {
+            "comment": "The plans of the region.",
+            "accessor": "plans",
+            "related": "Plan",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "reports": {
+            "comment": "The reports of the region.",
+            "accessor": "reports",
+            "related": "Report",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "sources": {
+            "comment": "The sources of the region.",
+            "accessor": "sources",
+            "related": "Source",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "tasks": {
+            "comment": "The tasks of the region.",
+            "accessor": "tasks",
+            "related": "Task",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "teams": {
+            "comment": "The teams of the region.",
+            "accessor": "teams",
+            "related": "Team",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        },
+        "teammates": {
+            "comment": "The teammates of the region.",
+            "accessor": "teammates",
+            "related": "Teammate",
+            "foreignKey": "region_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the region.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "region_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -3732,6 +3835,8 @@
     "uses": [
         "Database/Factories/Playground/Lead/Models/RegionFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

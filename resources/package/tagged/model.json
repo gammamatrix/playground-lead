@@ -1,0 +1,661 @@
+{
+    "class": "Tagged",
+    "config": "playground-lead",
+    "fqdn": "Playground/Lead/Models/Tagged",
+    "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
+    "module_slug": "lead",
+    "module_slugs": "leads",
+    "name": "Tagged",
+    "names": "Taggeds",
+    "namespace": "Playground/Lead",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Tagged",
+    "model_attribute": "tag_id",
+    "model_attribute_required": true,
+    "model_camel": "tagged",
+    "model_camels": "tagged",
+    "model_label": "Tagged",
+    "model_labels": "Tagged",
+    "model_lower": "tagged",
+    "model_lowers": "tagged",
+    "model_kebab": "tagged",
+    "model_kebabs": "tagged",
+    "model_plural": "",
+    "model_route_param": "tagged",
+    "model_singular": "",
+    "model_slug": "tagged",
+    "model_slugs": "tagged",
+    "model_slug_plural": "",
+    "model_snake": "tagged",
+    "model_snakes": "tagged",
+    "model_studly": "Tagged",
+    "model_studlies": "Tagged",
+    "model_variable": "tagged",
+    "model_variables": "tagged",
+    "recipe": "lead",
+    "type": "playground-model-tagged",
+    "table": "lead_tagged",
+    "perPage": null,
+    "controller": true,
+    "factory": true,
+    "migration": true,
+    "playground": true,
+    "policy": true,
+    "requests": true,
+    "revision": false,
+    "seed": true,
+    "test": true,
+    "extends": "UuidModel",
+    "implements": [],
+    "HasOne": {
+        "creator": {
+            "comment": "The creator.",
+            "accessor": "creator",
+            "related": "User",
+            "foreignKey": "id",
+            "localKey": "created_by_id"
+        },
+        "tag": {
+            "comment": "The tag.",
+            "accessor": "tag",
+            "related": "Tag",
+            "foreignKey": "id",
+            "localKey": "tag_id"
+        },
+        "campaign": {
+            "comment": "The tagged campaign.",
+            "accessor": "campaign",
+            "related": "Campaign",
+            "foreignKey": "id",
+            "localKey": "campaign_id"
+        },
+        "goal": {
+            "comment": "The tagged goal.",
+            "accessor": "goal",
+            "related": "Goal",
+            "foreignKey": "id",
+            "localKey": "goal_id"
+        },
+        "lead": {
+            "comment": "The tagged lead.",
+            "accessor": "lead",
+            "related": "Lead",
+            "foreignKey": "id",
+            "localKey": "lead_id"
+        },
+        "opportunity": {
+            "comment": "The tagged opportunity.",
+            "accessor": "opportunity",
+            "related": "Opportunity",
+            "foreignKey": "id",
+            "localKey": "opportunity_id"
+        },
+        "plan": {
+            "comment": "The tagged plan.",
+            "accessor": "plan",
+            "related": "Plan",
+            "foreignKey": "id",
+            "localKey": "plan_id"
+        },
+        "region": {
+            "comment": "The tagged region.",
+            "accessor": "region",
+            "related": "Region",
+            "foreignKey": "id",
+            "localKey": "region_id"
+        },
+        "report": {
+            "comment": "The tagged report.",
+            "accessor": "report",
+            "related": "Report",
+            "foreignKey": "id",
+            "localKey": "report_id"
+        },
+        "source": {
+            "comment": "The tagged source.",
+            "accessor": "source",
+            "related": "Source",
+            "foreignKey": "id",
+            "localKey": "source_id"
+        },
+        "task": {
+            "comment": "The tagged task.",
+            "accessor": "task",
+            "related": "Task",
+            "foreignKey": "id",
+            "localKey": "task_id"
+        },
+        "team": {
+            "comment": "The tagged team.",
+            "accessor": "team",
+            "related": "Team",
+            "foreignKey": "id",
+            "localKey": "team_id"
+        },
+        "teammate": {
+            "comment": "The tagged teammate.",
+            "accessor": "teammate",
+            "related": "Teammate",
+            "foreignKey": "id",
+            "localKey": "teammate_id"
+        }
+    },
+    "HasMany": [],
+    "HasManyThrough": [],
+    "scopes": [],
+    "attributes": {
+        "created_by_id": null,
+        "tag_id": null,
+        "campaign_id": null,
+        "goal_id": null,
+        "lead_id": null,
+        "opportunity_id": null,
+        "plan_id": null,
+        "region_id": null,
+        "report_id": null,
+        "source_id": null,
+        "task_id": null,
+        "team_id": null,
+        "teammate_id": null,
+        "created_at": null
+    },
+    "casts": {
+        "created_at": "datetime"
+    },
+    "fillable": [
+        "tag_id",
+        "campaign_id",
+        "goal_id",
+        "lead_id",
+        "opportunity_id",
+        "plan_id",
+        "region_id",
+        "report_id",
+        "source_id",
+        "task_id",
+        "team_id",
+        "teammate_id"
+    ],
+    "filters": {
+        "builder": null,
+        "ids": [
+            {
+                "column": "id",
+                "label": "ID",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "string"
+            },
+            {
+                "column": "created_by_id",
+                "label": "Created by ID",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "tag_id",
+                "label": "Tag id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "campaign_id",
+                "label": "Campaign id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "goal_id",
+                "label": "Goal id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "lead_id",
+                "label": "Lead id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "opportunity_id",
+                "label": "Opportunity id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "plan_id",
+                "label": "Plan id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "region_id",
+                "label": "Region id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "report_id",
+                "label": "Report id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "source_id",
+                "label": "Source id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "task_id",
+                "label": "Task id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "team_id",
+                "label": "Team id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            },
+            {
+                "column": "teammate_id",
+                "label": "Teammate id",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "uuid"
+            }
+        ],
+        "dates": [
+            {
+                "column": "created_at",
+                "label": "Created at",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "datetime"
+            }
+        ],
+        "flags": [],
+        "trash": {
+            "hide": true,
+            "only": true,
+            "with": true
+        },
+        "columns": [],
+        "permissions": [],
+        "status": [],
+        "matrix": [],
+        "ui": [],
+        "json": []
+    },
+    "models": [],
+    "sortable": [
+        {
+            "column": "id",
+            "label": "ID",
+            "icon": "",
+            "nullable": false,
+            "type": "string"
+        },
+        {
+            "column": "created_by_id",
+            "label": "Created by ID",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "tag_id",
+            "label": "Tag id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "campaign_id",
+            "label": "Campaign id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "goal_id",
+            "label": "Goal id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "lead_id",
+            "label": "Lead id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "opportunity_id",
+            "label": "Opportunity id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "plan_id",
+            "label": "Plan id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "region_id",
+            "label": "Region id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "report_id",
+            "label": "Report id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "source_id",
+            "label": "Source id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "task_id",
+            "label": "Task id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "team_id",
+            "label": "Team id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "teammate_id",
+            "label": "Teammate id",
+            "icon": "",
+            "nullable": false,
+            "type": "uuid"
+        },
+        {
+            "column": "created_at",
+            "label": "Created At",
+            "icon": "",
+            "nullable": false,
+            "type": "string"
+        }
+    ],
+    "create": {
+        "migration": "2010_09_30_000000_create_lead_tagged_table",
+        "primary": "uuid",
+        "timestamps": true,
+        "softDeletes": true,
+        "trash": {
+            "hide": false,
+            "only": false,
+            "with": false
+        },
+        "ids": {
+            "created_by_id": {
+                "column": "created_by_id",
+                "label": "Created by ID",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "users"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": true,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "tag_id": {
+                "column": "tag_id",
+                "label": "Tag id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_tags"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "campaign_id": {
+                "column": "campaign_id",
+                "label": "Campaign id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_campaigns"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "goal_id": {
+                "column": "goal_id",
+                "label": "Goal id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_goals"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "lead_id": {
+                "column": "lead_id",
+                "label": "Lead id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_leads"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "opportunity_id": {
+                "column": "opportunity_id",
+                "label": "Opportunity id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_opportunities"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "plan_id": {
+                "column": "plan_id",
+                "label": "Plan id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_plans"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "region_id": {
+                "column": "region_id",
+                "label": "Region id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_regions"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "report_id": {
+                "column": "report_id",
+                "label": "Report id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_reports"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "source_id": {
+                "column": "source_id",
+                "label": "Source id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_sources"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "task_id": {
+                "column": "task_id",
+                "label": "Task id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_tasks"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "team_id": {
+                "column": "team_id",
+                "label": "Team id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_teams"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            },
+            "teammate_id": {
+                "column": "teammate_id",
+                "label": "Teammate id",
+                "description": "",
+                "foreign": {
+                    "references": "id",
+                    "on": "lead_teammates"
+                },
+                "icon": "",
+                "index": true,
+                "nullable": true,
+                "readOnly": false,
+                "unsigned": false,
+                "type": "uuid"
+            }
+        },
+        "unique": [
+            {
+                "keys": [
+                    "slug",
+                    "parent_id"
+                ]
+            }
+        ],
+        "dates": [],
+        "flags": [],
+        "columns": [],
+        "permissions": [],
+        "status": [],
+        "matrix": [],
+        "ui": [],
+        "json": []
+    },
+    "uses": [
+        "Database/Factories/Playground/Lead/Models/TaggedFactory",
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasOne",
+        "Illuminate/Support/Carbon",
+        "Playground/Models/UuidModel",
+        "Playground\\Models\\User"
+    ]
+}

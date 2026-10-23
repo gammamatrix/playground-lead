@@ -6,7 +6,7 @@
 
 The Playground Lead is a package for [Laravel](https://laravel.com/docs/12.x) applications.
 
-Playground: Provides the Lead models for the Playground Lead System.
+Playground: Provides the models for the Playground Campaign and Lead Sales Management tool.
 
 Read more on using [Playground: Lead at Read the Docs](https://gammamatrix-playground.readthedocs.io/en/develop/built-components/lead.html)
 
@@ -18,7 +18,7 @@ Read more on using [Playground: Lead at Read the Docs](https://gammamatrix-playg
 
 Install this package, with composer, to get access to the Lead Models:
 
-```bash
+```shell
 composer require gammamatrix/playground-lead
 ```
 
@@ -35,14 +35,14 @@ Migrations are disabled by default. This package may sometimes be installed wher
 See the contents of the published config file: [config/playground-lead.php](config/playground-lead.php)
 
 You can publish the config file with:
-```bash
+```shell
 php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="playground-config"
 ```
 
 ### Environment Variables
 
-| env()                                | config()                         | Default |
-|--------------------------------------|----------------------------------|---------|
+| env()                             | config()                          | Default |
+|-----------------------------------|-----------------------------------|---------|
 | `PLAYGROUND_LEAD_ABOUT`           | `playground-lead.about`           | `true`  |
 | `PLAYGROUND_LEAD_LOAD_MIGRATIONS` | `playground-lead.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
@@ -70,34 +70,28 @@ See the contents of the published config file: [database/migrations](database/mi
 - NOTE: There are 11 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
 
 You can publish the migrations file with:
-```bash
+```shell
 php artisan vendor:publish --provider="Playground\Lead\ServiceProvider" --tag="playground-migrations"
 ```
 
 ## Cloc
 
-```sh
+```shell
 composer cloc
 ```
 
-```
-➜  playground-lead git:(develop) ✗ composer cloc
-     147 text files.
-     142 unique files.                              
-      54 files ignored.
-
-github.com/AlDanial/cloc v 2.08  T=0.09 s (1517.9 files/s, 592250.3 lines/s)
+```terminaloutput
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            64              0              0          42351
-PHP                             63            851           2629           8205
-XML                             10              0              7            894
-YAML                             1              5              0            275
-Markdown                         3             46              0            127
+JSON                            74              0              0          47594
+PHP                             73           1109           3512          10600
+XML                              3              0              7            215
+YAML                             1              4              0            187
+Markdown                         3             45              0            110
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                           142            905           2636          51864
+SUM:                           155           1161           3519          58718
 -------------------------------------------------------------------------------
 ```
 
@@ -110,30 +104,30 @@ Tests at level 10 on:
 - `tests/Feature/`
 - `tests/Unit/`
 
-```sh
+```shell
 composer analyse
 ```
 
 ## Coding Standards
 
-```sh
+```shell
 composer format
 ```
 
 ## Testing
 
 Unit tests
-```sh
+```shell
 composer test
 ```
 
 Unit and feature tests
-```sh
+```shell
 composer test-dev
 ```
 
 Run unit and feature tests in parallel:
-```sh
+```shell
 composer test-parallel
 ```
 

@@ -3,18 +3,38 @@
     "config": "playground-lead",
     "fqdn": "Playground/Lead/Models/Teammate",
     "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
     "module_slug": "lead",
+    "module_slugs": "leads",
     "name": "Teammate",
+    "names": "Teammates",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
     "model": "Teammate",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Teammates",
-    "model_singular": "Teammate",
+    "model_camel": "teammate",
+    "model_camels": "teammates",
+    "model_label": "Teammate",
+    "model_labels": "Teammates",
+    "model_lower": "teammate",
+    "model_lowers": "teammates",
+    "model_kebab": "teammate",
+    "model_kebabs": "teammates",
+    "model_plural": "",
+    "model_route_param": "teammate",
+    "model_singular": "",
     "model_slug": "teammate",
-    "model_slug_plural": "teammates",
+    "model_slugs": "teammates",
+    "model_slug_plural": "",
+    "model_snake": "teammate",
+    "model_snakes": "teammates",
+    "model_studly": "Teammate",
+    "model_studlies": "Teammates",
+    "model_variable": "teammate",
+    "model_variables": "teammates",
     "recipe": "lead",
     "type": "playground-model",
     "table": "lead_teammates",
@@ -102,7 +122,90 @@
             "localKey": "team_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "campaigns": {
+            "comment": "The campaigns of the teammate.",
+            "accessor": "campaigns",
+            "related": "Campaign",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "goals": {
+            "comment": "The goals of the teammate.",
+            "accessor": "goals",
+            "related": "Goal",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "leads": {
+            "comment": "The leads of the teammate.",
+            "accessor": "leads",
+            "related": "Lead",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "opportunities": {
+            "comment": "The opportunities of the teammate.",
+            "accessor": "opportunities",
+            "related": "Opportunity",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "plans": {
+            "comment": "The plans of the teammate.",
+            "accessor": "plans",
+            "related": "Plan",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "regions": {
+            "comment": "The regions of the teammate.",
+            "accessor": "regions",
+            "related": "Region",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "reports": {
+            "comment": "The reports of the teammate.",
+            "accessor": "reports",
+            "related": "Report",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "sources": {
+            "comment": "The sources of the teammate.",
+            "accessor": "sources",
+            "related": "Source",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "tasks": {
+            "comment": "The tasks of the teammate.",
+            "accessor": "tasks",
+            "related": "Task",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        },
+        "teams": {
+            "comment": "The teams of the teammate.",
+            "accessor": "teams",
+            "related": "Team",
+            "foreignKey": "teammate_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the teammate.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "teammate_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -3732,6 +3835,8 @@
     "uses": [
         "Database/Factories/Playground/Lead/Models/TeammateFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

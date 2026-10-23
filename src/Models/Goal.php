@@ -10,6 +10,8 @@ namespace Playground\Lead\Models;
 
 use Database\Factories\Playground\Lead\Models\GoalFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
@@ -626,6 +628,163 @@ class Goal extends Model
             Teammate::class,
             'id',
             'teammate_id'
+        );
+    }
+
+    /**
+     * The campaigns of the goal.
+     *
+     * @return HasMany<Campaign, $this>
+     */
+    public function campaigns(): HasMany
+    {
+        return $this->hasMany(
+            Campaign::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The leads of the goal.
+     *
+     * @return HasMany<Lead, $this>
+     */
+    public function leads(): HasMany
+    {
+        return $this->hasMany(
+            Lead::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The opportunities of the goal.
+     *
+     * @return HasMany<Opportunity, $this>
+     */
+    public function opportunities(): HasMany
+    {
+        return $this->hasMany(
+            Opportunity::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The plans of the goal.
+     *
+     * @return HasMany<Plan, $this>
+     */
+    public function plans(): HasMany
+    {
+        return $this->hasMany(
+            Plan::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The regions of the goal.
+     *
+     * @return HasMany<Region, $this>
+     */
+    public function regions(): HasMany
+    {
+        return $this->hasMany(
+            Region::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The reports of the goal.
+     *
+     * @return HasMany<Report, $this>
+     */
+    public function reports(): HasMany
+    {
+        return $this->hasMany(
+            Report::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The sources of the goal.
+     *
+     * @return HasMany<Source, $this>
+     */
+    public function sources(): HasMany
+    {
+        return $this->hasMany(
+            Source::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The tasks of the goal.
+     *
+     * @return HasMany<Task, $this>
+     */
+    public function tasks(): HasMany
+    {
+        return $this->hasMany(
+            Task::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The teams of the goal.
+     *
+     * @return HasMany<Team, $this>
+     */
+    public function teams(): HasMany
+    {
+        return $this->hasMany(
+            Team::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The teammates of the goal.
+     *
+     * @return HasMany<Teammate, $this>
+     */
+    public function teammates(): HasMany
+    {
+        return $this->hasMany(
+            Teammate::class,
+            'goal_id',
+            'id'
+        );
+    }
+
+    /**
+     * The tags of the goal.
+     *
+     * @return HasManyThrough<Tag, Tagged, $this>
+     */
+    public function tags(): HasManyThrough
+    {
+        return $this->hasManyThrough(
+            Tag::class,
+            Tagged::class,
+            'goal_id',
+            'id',
+            'id',
+            'tag_id'
         );
     }
 }

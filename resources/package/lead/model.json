@@ -3,18 +3,38 @@
     "config": "playground-lead",
     "fqdn": "Playground/Lead/Models/Lead",
     "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
     "module_slug": "lead",
+    "module_slugs": "leads",
     "name": "Lead",
+    "names": "Leads",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
     "model": "Lead",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Leads",
-    "model_singular": "Lead",
+    "model_camel": "lead",
+    "model_camels": "leads",
+    "model_label": "Lead",
+    "model_labels": "Leads",
+    "model_lower": "lead",
+    "model_lowers": "leads",
+    "model_kebab": "lead",
+    "model_kebabs": "leads",
+    "model_plural": "",
+    "model_route_param": "lead",
+    "model_singular": "",
     "model_slug": "lead",
-    "model_slug_plural": "leads",
+    "model_slugs": "leads",
+    "model_slug_plural": "",
+    "model_snake": "lead",
+    "model_snakes": "leads",
+    "model_studly": "Lead",
+    "model_studlies": "Leads",
+    "model_variable": "lead",
+    "model_variables": "leads",
     "recipe": "lead",
     "type": "playground-model",
     "table": "lead_leads",
@@ -102,7 +122,90 @@
             "localKey": "teammate_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "campaigns": {
+            "comment": "The campaigns of the lead.",
+            "accessor": "campaigns",
+            "related": "Campaign",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "goals": {
+            "comment": "The goals of the lead.",
+            "accessor": "goals",
+            "related": "Goal",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "opportunities": {
+            "comment": "The opportunities of the lead.",
+            "accessor": "opportunities",
+            "related": "Opportunity",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "plans": {
+            "comment": "The plans of the lead.",
+            "accessor": "plans",
+            "related": "Plan",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "regions": {
+            "comment": "The regions of the lead.",
+            "accessor": "regions",
+            "related": "Region",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "reports": {
+            "comment": "The reports of the lead.",
+            "accessor": "reports",
+            "related": "Report",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "sources": {
+            "comment": "The sources of the lead.",
+            "accessor": "sources",
+            "related": "Source",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "tasks": {
+            "comment": "The tasks of the lead.",
+            "accessor": "tasks",
+            "related": "Task",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "teams": {
+            "comment": "The teams of the lead.",
+            "accessor": "teams",
+            "related": "Team",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        },
+        "teammates": {
+            "comment": "The teammates of the lead.",
+            "accessor": "teammates",
+            "related": "Teammate",
+            "foreignKey": "lead_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the lead.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "lead_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -3732,6 +3835,8 @@
     "uses": [
         "Database/Factories/Playground/Lead/Models/LeadFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

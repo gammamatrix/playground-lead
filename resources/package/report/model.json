@@ -3,18 +3,38 @@
     "config": "playground-lead",
     "fqdn": "Playground/Lead/Models/Report",
     "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
     "module_slug": "lead",
+    "module_slugs": "leads",
     "name": "Report",
+    "names": "Reports",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "package": "playground-lead",
     "model": "Report",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "Reports",
-    "model_singular": "Report",
+    "model_camel": "report",
+    "model_camels": "reports",
+    "model_label": "Report",
+    "model_labels": "Reports",
+    "model_lower": "report",
+    "model_lowers": "reports",
+    "model_kebab": "report",
+    "model_kebabs": "reports",
+    "model_plural": "",
+    "model_route_param": "report",
+    "model_singular": "",
     "model_slug": "report",
-    "model_slug_plural": "reports",
+    "model_slugs": "reports",
+    "model_slug_plural": "",
+    "model_snake": "report",
+    "model_snakes": "reports",
+    "model_studly": "Report",
+    "model_studlies": "Reports",
+    "model_variable": "report",
+    "model_variables": "reports",
     "recipe": "lead",
     "type": "playground-model",
     "table": "lead_reports",
@@ -102,7 +122,90 @@
             "localKey": "teammate_id"
         }
     },
-    "HasMany": [],
+    "HasMany": {
+        "campaigns": {
+            "comment": "The campaigns of the report.",
+            "accessor": "campaigns",
+            "related": "Campaign",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "goals": {
+            "comment": "The goals of the report.",
+            "accessor": "goals",
+            "related": "Goal",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "leads": {
+            "comment": "The leads of the report.",
+            "accessor": "leads",
+            "related": "Lead",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "opportunities": {
+            "comment": "The opportunities of the report.",
+            "accessor": "opportunities",
+            "related": "Opportunity",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "plans": {
+            "comment": "The plans of the report.",
+            "accessor": "plans",
+            "related": "Plan",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "regions": {
+            "comment": "The regions of the report.",
+            "accessor": "regions",
+            "related": "Region",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "sources": {
+            "comment": "The sources of the report.",
+            "accessor": "sources",
+            "related": "Source",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "tasks": {
+            "comment": "The tasks of the report.",
+            "accessor": "tasks",
+            "related": "Task",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "teams": {
+            "comment": "The teams of the report.",
+            "accessor": "teams",
+            "related": "Team",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        },
+        "teammates": {
+            "comment": "The teammates of the report.",
+            "accessor": "teammates",
+            "related": "Teammate",
+            "foreignKey": "report_id",
+            "localKey": "id"
+        }
+    },
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the report.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "report_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -3732,6 +3835,8 @@
     "uses": [
         "Database/Factories/Playground/Lead/Models/ReportFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Database/Eloquent/Relations/HasOne",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"

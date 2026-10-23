@@ -10,6 +10,8 @@ namespace Playground\Lead\Models;
 
 use Database\Factories\Playground\Lead\Models\OpportunityFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
@@ -626,6 +628,163 @@ class Opportunity extends Model
             Teammate::class,
             'id',
             'teammate_id'
+        );
+    }
+
+    /**
+     * The campaigns of the opportunity.
+     *
+     * @return HasMany<Campaign, $this>
+     */
+    public function campaigns(): HasMany
+    {
+        return $this->hasMany(
+            Campaign::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The goals of the opportunity.
+     *
+     * @return HasMany<Goal, $this>
+     */
+    public function goals(): HasMany
+    {
+        return $this->hasMany(
+            Goal::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The leads of the opportunity.
+     *
+     * @return HasMany<Lead, $this>
+     */
+    public function leads(): HasMany
+    {
+        return $this->hasMany(
+            Lead::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The plans of the opportunity.
+     *
+     * @return HasMany<Plan, $this>
+     */
+    public function plans(): HasMany
+    {
+        return $this->hasMany(
+            Plan::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The regions of the opportunity.
+     *
+     * @return HasMany<Region, $this>
+     */
+    public function regions(): HasMany
+    {
+        return $this->hasMany(
+            Region::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The reports of the opportunity.
+     *
+     * @return HasMany<Report, $this>
+     */
+    public function reports(): HasMany
+    {
+        return $this->hasMany(
+            Report::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The sources of the opportunity.
+     *
+     * @return HasMany<Source, $this>
+     */
+    public function sources(): HasMany
+    {
+        return $this->hasMany(
+            Source::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The tasks of the opportunity.
+     *
+     * @return HasMany<Task, $this>
+     */
+    public function tasks(): HasMany
+    {
+        return $this->hasMany(
+            Task::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The teams of the opportunity.
+     *
+     * @return HasMany<Team, $this>
+     */
+    public function teams(): HasMany
+    {
+        return $this->hasMany(
+            Team::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The teammates of the opportunity.
+     *
+     * @return HasMany<Teammate, $this>
+     */
+    public function teammates(): HasMany
+    {
+        return $this->hasMany(
+            Teammate::class,
+            'opportunity_id',
+            'id'
+        );
+    }
+
+    /**
+     * The tags of the opportunity.
+     *
+     * @return HasManyThrough<Tag, Tagged, $this>
+     */
+    public function tags(): HasManyThrough
+    {
+        return $this->hasManyThrough(
+            Tag::class,
+            Tagged::class,
+            'opportunity_id',
+            'id',
+            'id',
+            'tag_id'
         );
     }
 }

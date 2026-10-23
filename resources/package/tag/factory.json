@@ -1,0 +1,16 @@
+{
+    "class": "TagFactory",
+    "config": "playground-lead",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Lead/Models/TagFactory",
+    "module": "Lead",
+    "module_slug": "lead",
+    "name": "TagFactory",
+    "namespace": "Database/Factories/Playground/Lead/Models",
+    "organization": "Playground",
+    "package": "playground-lead",
+    "model": "Tag",
+    "model_fqdn": "Playground/Lead/Models/Tag",
+    "recipe": "lead",
+    "type": "playground-model",
+    "models": []
+}

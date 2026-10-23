@@ -4,12 +4,16 @@
     "config_space": "PLAYGROUND_LEAD",
     "fqdn": "Playground/Lead/ServiceProvider",
     "module": "Lead",
+    "module_label": "Lead",
+    "module_labels": "Leads",
     "module_slug": "lead",
+    "module_slugs": "leads",
     "name": "Lead",
     "namespace": "Playground/Lead",
     "organization": "Playground",
     "organization_email": "jeremy.postlethwaite@gmail.com",
     "package": "playground-lead",
+    "recipe": "lead",
     "withBlades": false,
     "withControllers": false,
     "withFactories": true,
@@ -19,6 +23,7 @@
     "withPolicies": false,
     "withRequests": false,
     "withRoutes": false,
+    "withSeeders": false,
     "withTests": true,
     "withTranslations": false,
     "playground": true,
@@ -26,6 +31,7 @@
     "docs_name": "",
     "docs_url": "",
     "package_name": "Playground: Lead",
+    "model_index": "",
     "model_package": "",
     "model_package_name": "",
     "package_description": "Playground: Provides the models for the Playground Campaign and Lead Sales Management tool.",
@@ -63,13 +69,10 @@
     "package_repositories": [],
     "package_require": {
         "php": "^8.4",
-        "gammamatrix/playground": "*",
-        "illuminate/database": "^13.0",
-        "illuminate/support": "^13.0"
+        "gammamatrix/playground": "*"
     },
     "package_require_dev": {
-        "gammamatrix/playground-test": "*",
-        "illuminate/testing": "^13.0"
+        "gammamatrix/playground-test": "*"
     },
     "package_suggest": {
         "gammamatrix/playground-lead-api": "Provides an API, without a UI, to interact with the models provided in this package.",
@@ -92,6 +95,7 @@
     "policies": [],
     "requests": [],
     "routes": [],
+    "seeders": [],
     "transformers": [],
     "translations": [],
     "uses": []
